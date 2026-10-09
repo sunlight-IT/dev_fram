@@ -23,11 +23,10 @@ dev_fram/
 │   ├── port_hal_dma.c/h
 │   ├── port_hal_gpio.c
 │   ├── port_hal_i2c.c/h
-│   ├── port_hal_pwm.c/h
 │   ├── port_hal_spi.c/h
 │   ├── port_hal_tim.c/h
 │   ├── port_hal_uart.c/h
-│   └── port_tim_semantic.c/h
+│   └── port_hal_tim.c/h     TIM basic/PWM shared adapter
 ├── board_support/           板级支持包（按板子区分）
 │   └── kg200z/              KG200Z 板级资源定义
 │       ├── board_support.c      GPIO/UART/SPI/I2C 引脚与时钟映射

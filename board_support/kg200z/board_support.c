@@ -7,7 +7,6 @@
 #include "port_hal_i2c.h"
 #include "port_hal_spi.h"
 #include "port_hal_tim.h"
-#include "port_hal_pwm.h"
 #include "port_hal_clock.h"
 #include "port_hal_dma.h"
 #include "port_hal_gpio.h"
@@ -161,21 +160,6 @@ static uint32_t usr_port_spi1_kernel_clock_hz(void)
 static uint32_t usr_port_spi2_kernel_clock_hz(void)
 {
   return HAL_RCC_GetPCLK1Freq();
-}
-
-static uint32_t usr_port_tim2_kernel_clock_hz(void)
-{
-  RCC_ClkInitTypeDef clock_config;
-  uint32_t flash_latency;
-  uint32_t pclk;
-
-  pclk = HAL_RCC_GetPCLK1Freq();
-  HAL_RCC_GetClockConfig(&clock_config, &flash_latency);
-  if (clock_config.APB1CLKDivider == RCC_HCLK_DIV1)
-  {
-    return pclk;
-  }
-  return pclk * 2u;
 }
 
 static void usr_port_tim2_clock_enable(void)
@@ -353,31 +337,15 @@ static const usr_port_hal_tim_resource_t
     s_timer_resources[TIMER_INDEX_MAX] = {
   [TIMER_INDEX_SCHEDULER] = {
     .instance = TIM2,
-    .counter_bits = 32u,
-    .capability_mask = PORT_TIM_CAP_BASIC,
-    .owner = USR_PORT_TIM_OWNER_SCHEDULER,
-    .reserved_role = USR_PORT_TIM_ROLE_SCHEDULER_TICK,
-    .conflict_domain = 2u,
-    .clock_get_hz = usr_port_tim2_kernel_clock_hz,
+    .mode = USR_PORT_TIM_MODE_BASIC,
+    .timer_clock_hz = 48000000u,
+    .prescaler = 0u,
+    .auto_reload = 47999u,
     .clock_enable = usr_port_tim2_clock_enable,
     .clock_disable = usr_port_tim2_clock_disable,
     .has_update_irq = true,
-    .has_capture_irq = false,
     .update_irq = TIM2_IRQn,
-    .capture_irq = TIM2_IRQn,
     .irq_priority = 2u,
-    .irq_subpriority = 0u,
-    .channel_mask = 0u,
-    .capture_channel = 0u,
-    .gpio_port = NULL,
-    .gpio_pin = 0u,
-    .gpio_alternate = 0u,
-    .gpio_clock_enable = NULL,
-    .default_config = {
-      .mode = DEV_TIMER_MODE_BASIC,
-      .period_us = 1000u,
-      .capture = {0},
-    },
   },
 };
 
@@ -387,18 +355,15 @@ static usr_port_hal_tim_instance_t s_timer_instances[TIMER_INDEX_MAX] = {
     .handle = &htim2,
     .device = {
       .ctx = &s_timer_instances[TIMER_INDEX_SCHEDULER],
-      .config = {
-        .mode = DEV_TIMER_MODE_BASIC,
-        .period_us = 1000u,
-        .capture = {0},
-      },
       .ops = &port_hal_tim_ops,
+    },
+    .pwm_device = {
+      .ctx = &s_timer_instances[TIMER_INDEX_SCHEDULER],
+      .ops = &port_hal_pwm_ops,
     },
   },
 };
 
-static const uint32_t s_capture_resource_count = 0u;
-static const uint32_t s_pwm_resource_count = 0u;
 /************************************************************************/
 /*************************TIMER RESOURCE***********************************/
 /************************************************************************/
@@ -501,8 +466,6 @@ usr_status_t usr_port_board_init(void)
  usr_instance_spi_init(s_spi_instances, s_spi_resources);  
 
 
-  (void)s_capture_resource_count;
-  (void)s_pwm_resource_count;
 
 
 

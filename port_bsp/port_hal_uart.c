@@ -25,14 +25,6 @@ static bool port_hal_uart_valid(const usr_port_hal_uart_instance_t *uart)
     return false;
   }
   resource = uart->resource;
-  if ((resource == NULL) || (resource->instance == NULL) ||
-      (resource->gpio_port == NULL) || (resource->gpio_pins == 0u) ||
-      (resource->clock_config == NULL) || (resource->clock_enable == NULL) ||
-      (resource->clock_disable == NULL) ||
-      (resource->gpio_clock_enable == NULL))
-  {
-    return false;
-  }
   if ((uart->rx_mode == USR_PORT_HAL_UART_RX_DMA_CIRCULAR) &&
       ((uart->ring.buffer == NULL) ||
        (uart->ring.mode != RING_BUF_MODE_DMA_CIRCULAR) ||
@@ -109,21 +101,20 @@ static usr_status_t port_hal_uart_config_to_hal(
   if (cfg->parity == DEV_UART_PARITY_NONE)
   {
     parity = UART_PARITY_NONE;
-    if (cfg->data_bits == DEV_UART_DATA_BITS_7)
+    switch (cfg->data_bits)
     {
-      word_length = UART_WORDLENGTH_7B;
-    }
-    else if (cfg->data_bits == DEV_UART_DATA_BITS_8)
-    {
-      word_length = UART_WORDLENGTH_8B;
-    }
-    else if (cfg->data_bits == DEV_UART_DATA_BITS_9)
-    {
-      word_length = UART_WORDLENGTH_9B;
-    }
-    else
-    {
-      return USR_ERR_PARAM;
+      case DEV_UART_DATA_BITS_7:
+        word_length = UART_WORDLENGTH_7B;
+        break;
+      case DEV_UART_DATA_BITS_8:
+        word_length = UART_WORDLENGTH_8B;
+        break;
+      case DEV_UART_DATA_BITS_9:
+        word_length = UART_WORDLENGTH_9B;
+        break;
+      default:
+        word_length = UART_WORDLENGTH_9B;
+        break;
     }
   }
   else
@@ -140,21 +131,19 @@ static usr_status_t port_hal_uart_config_to_hal(
     {
       return USR_ERR_PARAM;
     }
-    if (cfg->data_bits == DEV_UART_DATA_BITS_7)
-    {
-      word_length = UART_WORDLENGTH_8B;
-    }
-    else if (cfg->data_bits == DEV_UART_DATA_BITS_8)
-    {
-      word_length = UART_WORDLENGTH_9B;
-    }
-    else if (cfg->data_bits == DEV_UART_DATA_BITS_9)
-    {
-      return USR_ERR_UNSUPPORTED;
-    }
-    else
-    {
-      return USR_ERR_PARAM;
+    switch (cfg->data_bits) {
+      case DEV_UART_DATA_BITS_7:
+        word_length = UART_WORDLENGTH_8B;
+        break;
+      case DEV_UART_DATA_BITS_8:
+        word_length = UART_WORDLENGTH_9B;
+        break;
+      case DEV_UART_DATA_BITS_9:
+        return USR_ERR_UNSUPPORTED;
+        break;
+      default:
+        return USR_ERR_PARAM;
+        break;
     }
   }
 
@@ -171,6 +160,7 @@ static usr_status_t port_hal_uart_config_to_hal(
     return USR_ERR_PARAM;
   }
 
+  
   if (cfg->direction == DEV_UART_DIRECTION_TX)
   {
     mode = UART_MODE_TX;
@@ -324,15 +314,13 @@ static usr_status_t port_hal_uart_stop_rx(
   HAL_StatusTypeDef status = HAL_OK;
   usr_status_t stop_status;
 
-  if (!port_hal_uart_valid(uart))
-  {
-    return USR_ERR_PARAM;
-  }
+
   if (uart->enabled == 0u)
   {
     uart->restart_pending = 0u;
     return USR_OK;
   }
+
   if (uart->rx_mode == USR_PORT_HAL_UART_RX_DMA_CIRCULAR)
   {
     status = HAL_UART_DMAStop(uart->handle);
@@ -341,6 +329,8 @@ static usr_status_t port_hal_uart_stop_rx(
   {
     status = HAL_UART_AbortReceive(uart->handle);
   }
+
+  
   if (status != HAL_OK)
   {
     stop_status = port_hal_uart_map(status);
@@ -395,9 +385,6 @@ static usr_status_t port_hal_uart_init(void *ctx, const void *cfg)
   const uart_param_config_t *config;
   usr_status_t status;
 
-
-
-
   config = (cfg == NULL) ? &uart->resource->default_config
                          : (const uart_param_config_t *)cfg;
   
@@ -413,11 +400,8 @@ static usr_status_t port_hal_uart_init(void *ctx, const void *cfg)
   {
     return USR_ERR_PARAM;
   }
-  if (uart->faulted != 0u)
-  {
-    return USR_ERR_STATE;
-  }
-  if (uart->initialized != 0u)
+
+  if (uart->faulted != 0u || uart->initialized != 0u)
   {
     return USR_ERR_STATE;
   }
@@ -458,10 +442,12 @@ static usr_status_t port_hal_uart_deinit(void *ctx)
   {
     return USR_ERR_PARAM;
   }
+
   if (uart->faulted != 0u)
   {
     return port_hal_uart_cleanup(uart);
   }
+
   if (uart->initialized == 0u)
   {
     return USR_OK;
@@ -538,10 +524,7 @@ static usr_status_t port_hal_uart_write(void *ctx, const uint8_t *data,
   {
     return USR_ERR_NOT_INIT;
   }
-  if (!port_hal_uart_direction_has_tx(uart->runtime_config.direction))
-  {
-    return USR_ERR_UNSUPPORTED;
-  }
+
   return port_hal_uart_map(
       HAL_UART_Transmit(uart->handle, (uint8_t *)data, len, timeout_ms));
 }
@@ -566,10 +549,7 @@ static usr_status_t port_hal_uart_read(void *ctx, uint8_t *data,
   {
     return USR_ERR_NOT_INIT;
   }
-  if (!port_hal_uart_direction_has_rx(uart->runtime_config.direction))
-  {
-    return USR_ERR_UNSUPPORTED;
-  }
+
   if (uart->rx_mode == USR_PORT_HAL_UART_RX_NONE)
   {
     return USR_ERR_UNSUPPORTED;
@@ -614,11 +594,12 @@ static usr_status_t port_hal_uart_control(void *ctx, uint32_t cmd, void *arg)
       {
         return USR_ERR_NOT_INIT;
       }
+
       candidate = (const uart_param_config_t *)arg;
       old_config = uart->runtime_config;
       old_initialized = uart->initialized;
-      old_rx_requested = (uart->enabled != 0u) ||
-                         (uart->restart_pending != 0u);
+      old_rx_requested = (uart->enabled != 0u) || (uart->restart_pending != 0u);
+      
       status = port_hal_uart_stop_rx(uart);
       if (status != USR_OK)
       {

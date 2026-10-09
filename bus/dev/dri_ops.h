@@ -56,25 +56,21 @@ typedef struct
 
 typedef struct
 {
-  usr_status_t (*init)(void *ctx, const void *cfg);
+  usr_status_t (*init)(void *ctx);
   usr_status_t (*deinit)(void *ctx);
   usr_status_t (*start)(void *ctx);
   usr_status_t (*stop)(void *ctx);
   uint32_t (*get_ticks)(void *ctx);
-  usr_status_t (*capture_read)(void *ctx, void *result);
   usr_status_t (*get_status)(void *ctx, void *status);
 } dev_timer_ops_t;
 
 typedef struct
 {
-  usr_status_t (*init)(void *ctx, const void *cfg);
+  usr_status_t (*init)(void *ctx);
   usr_status_t (*deinit)(void *ctx);
   usr_status_t (*start)(void *ctx);
   usr_status_t (*stop)(void *ctx);
-  usr_status_t (*set_duty)(void *ctx, uint16_t duty_permille);
-  usr_status_t (*set_frequency)(void *ctx, uint32_t frequency_hz,
-                                void *actual);
-  usr_status_t (*get_actual)(void *ctx, void *actual);
+  usr_status_t (*set_compare)(void *ctx, uint32_t compare);
   usr_status_t (*get_status)(void *ctx, void *status);
 } dev_pwm_ops_t;
 
