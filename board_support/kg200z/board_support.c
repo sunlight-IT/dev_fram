@@ -10,6 +10,8 @@
 #include "port_hal_pwm.h"
 #include "port_hal_clock.h"
 #include "port_hal_dma.h"
+#include "port_hal_gpio.h"
+
 extern const dev_gpio_ops_t port_hal_gpio_ops;
 
 #define UART_RING_BUF_SIZE 256u

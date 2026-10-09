@@ -5,7 +5,6 @@
 extern "C" {
 #endif
 
-#include "stm32wlxx_hal.h"
 #include "dev_spi.h"
 #include "port_hal_dma.h"
 

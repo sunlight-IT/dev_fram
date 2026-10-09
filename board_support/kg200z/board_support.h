@@ -9,6 +9,8 @@
 #include "dev_timer.h"
 #include "dev_pwm.h"
 
+#include "stm32wlxx_hal.h"
+
 
 
 

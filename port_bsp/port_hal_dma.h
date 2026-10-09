@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 #include <stdbool.h>
-#include "stm32wlxx_hal.h"
+#include "board_support.h"
 
 typedef void (*port_hal_dma_clock_enable_fn_t)(void);
 

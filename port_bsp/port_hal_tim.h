@@ -1,9 +1,10 @@
 #ifndef __PORT_HAL_TIM_H__
 #define __PORT_HAL_TIM_H__
 
-#include "stm32wlxx_hal.h"
 #include "dev_timer.h"
 #include "port_tim_semantic.h"
+
+#include "board_support.h"
 
 #define USR_PORT_TIM_PWM_CHANNEL_COUNT 4u
 

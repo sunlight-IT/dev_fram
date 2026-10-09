@@ -5,9 +5,11 @@
 extern "C" {
 #endif
 
-#include "stm32wlxx_hal.h"
+
 #include "dev_i2c.h"
 #include "port_hal_dma.h"
+
+
 
 typedef HAL_StatusTypeDef (*usr_port_hal_i2c_clock_config_fn_t)(void);
 typedef void (*usr_port_hal_i2c_clock_gate_fn_t)(void);

@@ -4,10 +4,9 @@
   * @brief   Reusable descriptor-driven STM32 HAL GPIO adapter.
   ******************************************************************************
   */
-#include "stm32wlxx_hal.h"
 
 #include "dev_gpio.h"
-#include "usr_port_hal.h"
+#include "port_hal_gpio.h"
 
 static usr_port_hal_gpio_t *s_irq_gpio;
 

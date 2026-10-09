@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#include "stm32wlxx_hal.h"
+#include "board_support.h"
 
 #define PORT_HAL_JOIN_IMPL(left, right) left##right
 #define PORT_HAL_JOIN(left, right) PORT_HAL_JOIN_IMPL(left, right)
