@@ -1,13 +1,12 @@
-﻿# dev_fram
+﻿﻿# dev_fram
 
-KG200Z 硬件抽象层（HAL）子模块，包含通用设备驱动接口、BSP 移植层及板级支持包。
+跨平台硬件抽象层（HAL）子模块，包含通用设备驱动接口、BSP 移植层及板级支持包。当前支持 H743 和 KG200Z 两套板级配置。
 
 ## 目录结构
 
 ```
 dev_fram/
-├── common/                  通用类型与工具宏
-│   ├── usr_common.h
+├── common/                  通用工具宏
 │   └── usr_check.h
 ├── bus/dev/                 总线设备驱动接口（与 MCU 无关）
 │   ├── dri_ops.h            驱动操作基类
@@ -28,15 +27,21 @@ dev_fram/
 │   ├── port_hal_uart.c/h
 │   └── port_hal_tim.c/h     TIM basic/PWM shared adapter
 ├── board_support/           板级支持包（按板子区分）
+│   ├── H743/                STM32H743 板级资源定义
+│   │   ├── board_support.c      GPIO/UART/SPI/I2C/TIM/PWM 引脚与时钟映射
+│   │   ├── board_support.h      设备获取 API 声明
+│   │   ├── usr_common.h         逻辑引脚枚举与通用类型
+│   │   └── usr_port_platform.c  平台初始化与系统复位
 │   └── kg200z/              KG200Z 板级资源定义
-│       ├── board_support.c      GPIO/UART/SPI/I2C 引脚与时钟映射
+│       ├── board_support.c      GPIO/UART/SPI/I2C/TIM 引脚与时钟映射
+│       ├── board_support.h      设备获取 API 声明
+│       ├── usr_common.h         逻辑引脚枚举与通用类型
 │       └── usr_port_platform.c  平台初始化与系统复位
 ├── component/               独立组件
 │   ├── ring_buf.c
 │   └── ring_buf.h
 ├── log/                     日志（仅头文件）
 │   └── my_log.h
-├── board_support.h          板级 API 声明
 ├── usr_port.h               Port 层总头文件
 └── usr_port_hal.h           Port HAL 层总头文件
 ```
@@ -55,13 +60,16 @@ board_support/<board>  ->  port_bsp  ->  bus/dev  ->  common
 
 ## 添加新板子
 
-在 `board_support/` 下新建目录，实现 `board_support.c` 和 `usr_port_platform.c`：
+在 `board_support/` 下新建目录，实现 `board_support.c`、`board_support.h`、`usr_common.h` 和 `usr_port_platform.c`：
 
 ```
 board_support/
+├── H743/            <- 现有
 ├── kg200z/          <- 现有
-└── kg200z_v2/       <- 新板子
+└── new_board/       <- 新板子
     ├── board_support.c
+    ├── board_support.h
+    ├── usr_common.h
     └── usr_port_platform.c
 ```
 
