@@ -47,7 +47,7 @@ typedef struct usr_port_hal_pwm_instance
 {
   const usr_port_hal_pwm_resource_t *resource;
   TIM_HandleTypeDef *handle;
-  pwm_device_t device;
+  pwm_device_t* device;
   usr_port_pwm_lifecycle_t lifecycle;
   volatile uint32_t tick_count;
   uint32_t compare;
@@ -57,7 +57,9 @@ typedef struct usr_port_hal_pwm_instance
 extern TIM_HandleTypeDef htim5;
 extern const dev_pwm_ops_t port_hal_pwm_ops;
 
-usr_port_hal_pwm_instance_t *usr_port_board_pwm_find_instance(
-                    const TIM_HandleTypeDef *handle);
+usr_port_hal_pwm_instance_t *
+usr_port_board_pwm_find_instance(const TIM_HandleTypeDef *handle);
+
+TIM_HandleTypeDef *get_pwm_table_handle(uint32_t index);
 
 #endif

@@ -6,6 +6,22 @@
   */
 #include "dev_pwm.h"
 
+static pwm_device_t s_devices[PWM_INDEX_MAX];
+
+pwm_device_t *get_pwm_device(uint8_t index)
+{
+  if (index >= PWM_INDEX_MAX)
+  {
+    return NULL;
+  }
+  return &s_devices[index];
+}
+
+
+
+
+
+
 usr_status_t dev_pwm_init(pwm_device_t *dev)
 {
   if ((dev == NULL) || (dev->ops == NULL) || (dev->ops->init == NULL))

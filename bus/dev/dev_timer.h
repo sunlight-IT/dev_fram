@@ -33,4 +33,7 @@ uint32_t dev_timer_get_ticks(timer_device_t *dev);
 usr_status_t dev_timer_get_status(timer_device_t *dev,
                                   dev_timer_status_t *status);
 
+timer_device_t *get_timer_device(uint8_t index);
+
+
 #endif

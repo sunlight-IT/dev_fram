@@ -6,6 +6,17 @@
   */
 #include "dev_timer.h"
 
+static timer_device_t s_devices[TIM_INDEX_MAX];
+
+timer_device_t *get_timer_device(uint8_t index)
+{
+  if (index >= TIM_INDEX_MAX)
+  {
+    return NULL;
+  }
+  return &s_devices[index];
+}
+
 usr_status_t dev_timer_init(timer_device_t *dev)
 {
   if ((dev == NULL) || (dev->ops == NULL) ||

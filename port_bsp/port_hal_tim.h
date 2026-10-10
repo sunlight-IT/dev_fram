@@ -38,7 +38,7 @@ typedef struct usr_port_hal_tim_instance
 {
   const usr_port_hal_tim_resource_t *resource;
   TIM_HandleTypeDef *handle;
-  timer_device_t device;
+  timer_device_t* device;
 
   usr_port_tim_lifecycle_t lifecycle;
   volatile uint32_t tick_count;
@@ -54,6 +54,8 @@ extern const dev_timer_ops_t port_hal_tim_ops;
 void port_hal_tim_irq(usr_port_hal_tim_instance_t *timer);
 usr_port_hal_tim_instance_t *
 usr_port_board_tim_find_instance(const TIM_HandleTypeDef *handle);
+
+TIM_HandleTypeDef *get_tim_table_handle(uint32_t index);
 
 
 #endif

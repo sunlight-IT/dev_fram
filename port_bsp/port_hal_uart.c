@@ -60,11 +60,18 @@ bool usr_port_hal_uart_dma_irq(IRQn_Type irq)
 
 void port_hal_uart_irq(UART_HandleTypeDef *uartHandle)
 {
-  if (usr_port_board_uart_find_instance(uartHandle) != NULL)
+  
+}
+
+
+void USART1_IRQHandler(void)
+{
+  if (usr_port_board_uart_find_instance(&huart_table[UART_INDEX_0]) != NULL)
   {
-    HAL_UART_IRQHandler(uartHandle);
+    HAL_UART_IRQHandler(&huart_table[UART_INDEX_0]);
   }
 }
+
 
 static usr_status_t port_hal_uart_map(HAL_StatusTypeDef status)
 {

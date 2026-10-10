@@ -1,7 +1,17 @@
 #include "port_hal_pwm.h"
 
 
-TIM_HandleTypeDef htim5;
+
+TIM_HandleTypeDef hpwm_table[PWM_INDEX_MAX];
+
+TIM_HandleTypeDef *get_pwm_table_handle(uint32_t index) {
+  if (index >= PWM_INDEX_MAX) {
+    return NULL;
+  }
+  return &hpwm_table[index];
+}
+
+
 
 static usr_status_t port_hal_tim_init_common(
     usr_port_hal_pwm_instance_t *timer)

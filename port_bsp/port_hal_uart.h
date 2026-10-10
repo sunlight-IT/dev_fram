@@ -31,7 +31,7 @@ extern "C" {
     .irq_enable = true,                                                        \                  
 }
 
-#define LPUART1_CONFIG_DEFAULT                                              \
+#define UART3_CONFIG_DEFAULT                                                \
   {.baudrate = 9600u,                                                       \
    .data_bits = DEV_UART_DATA_BITS_8,                                       \
    .parity = DEV_UART_PARITY_NONE,                                         \

@@ -2,6 +2,15 @@
 
 TIM_HandleTypeDef htim2;
 
+static TIM_HandleTypeDef htim_table[TIM_INDEX_MAX];
+
+TIM_HandleTypeDef *get_tim_table_handle(uint32_t index) {
+  if (index >= TIM_INDEX_MAX) {
+    return NULL;
+  }
+  return &htim_table[index];
+}
+
 
 static bool port_hal_tim_valid(const usr_port_hal_tim_instance_t *timer)
 {
@@ -206,8 +215,12 @@ static usr_port_hal_tim_instance_t *port_hal_tim_from_handle(
 }
 
 static void port_hal_tim_msp_init(TIM_HandleTypeDef *handle,
-                                  bool enable_update_irq)
-{
+                                  bool enable_update_irq) {
+
+  if (handle->Instance == SYSTEM_TIMER)
+  {
+    return;
+  }
   usr_port_hal_tim_instance_t *timer = port_hal_tim_from_handle(handle);
 
   if (timer == NULL)
@@ -253,18 +266,16 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef *handle)
 
 void port_hal_tim_irq(usr_port_hal_tim_instance_t *timer)
 {
-  // if ((timer != NULL) && (timer->handle != NULL) &&
-  //     (__HAL_TIM_GET_FLAG(timer->handle, TIM_FLAG_UPDATE) != RESET) &&
-  //     (__HAL_TIM_GET_IT_SOURCE(timer->handle, TIM_IT_UPDATE) != RESET))
-  // {
-  //   __HAL_TIM_CLEAR_IT(timer->handle, TIM_IT_UPDATE);
-    
-  // }
+
   
 }
 
 void TIM2_IRQHandler(void) {
-  HAL_TIM_IRQHandler(&htim2);
+
+  if (usr_port_board_tim_find_instance(&htim_table[TIM_INDEX_0]) != NULL)
+  {
+    HAL_TIM_IRQHandler(&htim_table[TIM_INDEX_0]);
+  }
   // port_hal_tim_irq(usr_port_board_tim_find_instance(&htim2));
 }
 

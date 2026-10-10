@@ -39,4 +39,6 @@ usr_status_t dev_pwm_set_compare(pwm_device_t *dev, uint8_t channel,
                                  uint32_t compare);
 usr_status_t dev_pwm_get_status(pwm_device_t *dev, dev_pwm_status_t *status);
 
+pwm_device_t *get_pwm_device(uint8_t index);
+
 #endif
