@@ -10,6 +10,7 @@
 #include "port_hal_clock.h"
 #include "port_hal_dma.h"
 #include "port_hal_pwm.h"
+#include "port_hal_gpio.h"
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -388,14 +389,11 @@ _Static_assert(ARRAY_SIZE(s_i2c_resources) == ARRAY_SIZE(s_i2c_instances),
 /************************************************************************/
 /*************************TIMER RESOURCE***********************************/
 /************************************************************************/
-static usr_port_hal_timer_t s_timer_ctx = {
-    // .handle = &htim2,
-};
 
-static timer_device_t s_timer_device = {
-    .ctx = &s_timer_ctx,
-    .ops = &port_hal_tim_ops,
-};
+// static timer_device_t s_timer_device = {
+//     .ctx = &s_timer_ctx,
+//     .ops = &port_hal_tim_ops,
+// };
 /************************************************************************/
 /*************************TIMER RESOURCE***********************************/
 /************************************************************************/
@@ -692,7 +690,6 @@ i2c_device_t *get_i2c_device(void)
   return &s_i2c_instances[I2C_INDEX_0].device;
 }
 
-timer_device_t *get_timer_device(void) { return &s_timer_device; }
 
 timer_device_t *get_tim_device(uint8_t index) {
   if (index >= TIM_INDEX_MAX)

@@ -24,7 +24,6 @@ uart_device_t *get_uart_device(uint8_t index);
 time_dev_t *get_time_device(void);
 spi_device_t *get_spi_device(uint8_t index);
 i2c_device_t *get_i2c_device(void);
-timer_device_t *get_timer_device(void);
 pwm_device_t *get_pwm_device(uint8_t index);
 
 timer_device_t *get_tim_device(uint8_t index);
