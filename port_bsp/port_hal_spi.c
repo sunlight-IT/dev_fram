@@ -7,7 +7,6 @@
 #include <string.h>
 #include <stdint.h>
 
-#include "stm32wlxx_hal.h"
 #include "main.h"
 #include "dev_spi.h"
 #include "port_hal_dma.h"

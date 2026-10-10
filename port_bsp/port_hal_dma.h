@@ -13,7 +13,11 @@ typedef void (*port_hal_dma_clock_enable_fn_t)(void);
 typedef struct
 {
   DMA_HandleTypeDef *handle;
+  #ifndef STM32H743xx
   DMA_Channel_TypeDef *instance;
+  #else
+    void *instance;
+  #endif
   DMA_InitTypeDef init;
   IRQn_Type irq;
   uint32_t irq_priority;

@@ -70,17 +70,8 @@ typedef struct
   usr_status_t (*deinit)(void *ctx);
   usr_status_t (*start)(void *ctx);
   usr_status_t (*stop)(void *ctx);
-  usr_status_t (*set_compare)(void *ctx, uint32_t compare);
+  usr_status_t (*set_compare)(void *ctx, uint8_t channel,
+                              uint32_t compare);
   usr_status_t (*get_status)(void *ctx, void *status);
 } dev_pwm_ops_t;
-
-typedef struct
-{
-  usr_status_t (*init)(void *ctx);
-  usr_status_t (*write)(void *ctx, usr_pin_id_t pin, uint8_t level);
-  usr_status_t (*read)(void *ctx, usr_pin_id_t pin, uint8_t *level);
-} dev_log_ops_t;
-
-
-
 #endif

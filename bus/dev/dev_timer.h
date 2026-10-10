@@ -3,6 +3,14 @@
 
 #include "dri_ops.h"
 
+typedef enum {
+  TIM_INDEX_0 = 0,
+  TIM_INDEX_1 = 1,
+  TIM_INDEX_2 = 2,
+  TIM_INDEX_3 = 3,
+  TIM_INDEX_MAX = 4,
+} tim_index_t;
+
 typedef struct dev_timer_status
 {
   bool initialized;

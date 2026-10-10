@@ -52,6 +52,24 @@ extern "C" {
     __HAL_RCC_##gpio_prefix##gpio_suffix##_CLK_ENABLE();                       \
   }
 
+#define PORT_HAL_DEFINE_GPIO_CLOCK_ENABLE_FUNCTION(prefix, gpio_prefix,        \
+                                                   gpio_suffix)                \
+  static void PORT_HAL_JOIN(prefix, _clock_enable)(void) {                     \
+    __HAL_RCC_##gpio_prefix##gpio_suffix##_CLK_ENABLE();                       \
+  }
+
+#define PORT_HAL_DEFINE_PERIPHERAL_CLOCK_ENABLE_FUNCTION(                      \
+    prefix, peripheral_prefix, peripheral_number)                              \
+  static void PORT_HAL_JOIN(prefix, _clock_enable)(void) {                     \
+    __HAL_RCC_##peripheral_prefix##peripheral_number##_CLK_ENABLE();           \
+  }
+
+#define PORT_HAL_DEFINE_PERIPHERAL_CLOCK_DISABLE_FUNCTION(\
+    prefix, peripheral_prefix, peripheral_number)    \
+static void PORT_HAL_JOIN(prefix, _clock_disable)(void)                      \
+  {                                                                            \
+    __HAL_RCC_##peripheral_prefix##peripheral_number##_CLK_DISABLE();          \
+  }      
 #ifdef __cplusplus
 }
 #endif

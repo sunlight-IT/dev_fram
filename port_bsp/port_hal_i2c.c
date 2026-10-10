@@ -6,7 +6,6 @@
   */
 #include <string.h>
 
-#include "stm32wlxx_hal.h"
 #include "port_hal_dma.h"
 #include "port_hal_i2c.h"
 

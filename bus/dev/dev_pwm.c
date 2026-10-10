@@ -43,16 +43,16 @@ usr_status_t dev_pwm_stop(pwm_device_t *dev)
   return dev->ops->stop(dev->ctx);
 }
 
-usr_status_t dev_pwm_set_compare(pwm_device_t *dev, uint32_t compare)
+usr_status_t dev_pwm_set_compare(pwm_device_t *dev, uint8_t channel,
+                                 uint32_t compare)
 {
   if ((dev == NULL) || (dev->ops == NULL) ||
       (dev->ops->set_compare == NULL))
   {
     return USR_ERR_PARAM;
   }
-  return dev->ops->set_compare(dev->ctx, compare);
+  return dev->ops->set_compare(dev->ctx, channel, compare);
 }
-
 usr_status_t dev_pwm_get_status(pwm_device_t *dev, dev_pwm_status_t *status)
 {
   dev_pwm_status_t status_snapshot;

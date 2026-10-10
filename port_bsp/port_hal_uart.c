@@ -4,7 +4,6 @@
   * @brief   STM32 HAL UART adapter with shared DMA and interrupt RX buffers.
   ******************************************************************************
   */
-#include "stm32wlxx_hal.h"
 #include "main.h"
 #include "port_hal_dma.h"
 #include "port_hal_uart.h"

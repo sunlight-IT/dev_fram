@@ -93,8 +93,9 @@ void port_hal_dma_irq(const port_hal_dma_resource_t *resource)
   HAL_DMA_IRQHandler(resource->handle);
 }
 
-void port_hal_dma_controller_clock_enable(void)
-{
+void port_hal_dma_controller_clock_enable(void) {
+  #ifndef STM32H743xx
   __HAL_RCC_DMAMUX1_CLK_ENABLE();
+  #endif
   __HAL_RCC_DMA1_CLK_ENABLE();
 }
