@@ -217,10 +217,12 @@ static usr_port_hal_tim_instance_t *port_hal_tim_from_handle(
 static void port_hal_tim_msp_init(TIM_HandleTypeDef *handle,
                                   bool enable_update_irq) {
 
+  #ifdef SYSTEM_TIMER
   if (handle->Instance == SYSTEM_TIMER)
   {
     return;
   }
+  #endif
   usr_port_hal_tim_instance_t *timer = port_hal_tim_from_handle(handle);
 
   if (timer == NULL)
