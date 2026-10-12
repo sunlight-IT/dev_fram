@@ -22,7 +22,7 @@ README 中“修改 CMake 路径即可”解释为无需核对契约。
 
 - `usr_common.h` 提供 `usr_status_t`、`USR_*` 值、逻辑 pin、callback、time 类型及所需标准类型。
 - `board_support.h` 提供 HAL 类型可见性、板级声明和 adapter 所需查询契约。公共 bus 头通过 `dri_ops.h` 依赖 `usr_common.h`，宿主不能借此向公共层引入厂商类型。
-- BSP 定义实际 resource 表、instance 存储、设备 `ctx/ops` 绑定，以及 UART/SPI/I2C/TIM/PWM 的 instance/DMA 查询。
+- BSP 定义实际 resource 表、instance 存储、设备 `ctx/ops` 绑定，以及 UART/SPI/I2C/CAN/TIM/PWM 的 instance/DMA 查询。
 - GPIO/I2C/time 查询与 platform init/system reset 等入口按实际公开声明由宿主实现；不要照抄 demo 中不匹配的 timer 声明。
 - 使用 logger 时提供 `zlog`、level、tick、输出等实现；只存在 `my_log.h` 不能证明日志已可用。
 
@@ -31,6 +31,11 @@ README 中“修改 CMake 路径即可”解释为无需核对契约。
 宿主为每个启用外设明确一个 IRQ/vector/MSP 所有者，核查哪些 HAL hooks 已由 adapter 强定义。
 UART 物理 IRQ 经当前 `port_hal_uart_irq(handle)` 接入；DMA callbacks 和错误 callbacks
 按返回 bool 的 ownership 协议分发。不得同时分发 port 和 legacy owner。
+
+CAN/FDCAN 宿主还必须提供唯一 HAL handle、MSP 委派、IRQ vector 和 HAL callback owner。
+CAN resource 负责 mode、GPIO/clock/IRQ、完整 Message RAM 布局、filter destination、RX location
+和静态队列；adapter 在初始化前拒绝不一致的 route、元素容量和 Message RAM 预算。
+若工程已弃用 `.ioc`，它不能作为资源事实源或验证输入；实际 C resource、启动调用链和链接符号才是当前配置。
 
 当前 TIM 仍强定义 TIM2 vector 和 period callback，因此换板或使用 HAL TIM timebase 前须检查
 重复符号、资源查询、未绑定 handle 和 `SYSTEM_TIMER` 的覆盖范围。这个问题是接入限制，

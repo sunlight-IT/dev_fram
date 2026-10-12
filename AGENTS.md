@@ -64,15 +64,16 @@ Paths and hashes are relative to this framework checkout.
 | --- | --- | --- | --- |
 | docs/README.md | active | derived | 28d2e66a8ab118adbc35c77778ffb402c14a168597049b6d9cb8dbe14e385547 |
 | docs/completions/2026-10-10-portable-document-library.md | active | derived | 38fbcf7592382ad9db4a587ba3a5f6a8a846ce43ad9382133c5d2a2fc028d253 |
+| docs/completions/2026-10-12-can-device-framework.md | active | derived | 90eba777c6d2ca9fd3dc0a41bb480eaee5d5315238e802bf677ca2f6246ebb30 |
 | docs/completions/TEMPLATE.md | active | derived | af1d363e2b58e438f5d4f03479a129c243866b4d9195f1eb389cd58bc101c2d9 |
-| docs/completions/evidence-index.md | active | derived | 1165e491c57457f16b5a6144714a2d6844116d14a11357fa5055125e6b0b09c5 |
+| docs/completions/evidence-index.md | active | derived | e777c3c37fa8cf02d70a85e3d3b7a3825ddeaf98f0d9beab4cc1e0a67a68fab8 |
 | docs/completions/history/2026-09-29-document-governance.md | historical | excerpt | da9b71746aef104ab5dc310e0b994df438217560be53d95438b7774db1658711 |
 | docs/completions/history/2026-09-29-guideline-origin.md | historical | excerpt | 7d2378babcc9df91e1c048cb7f70cb44cff85719cfb9295e210575746ef40416 |
 | docs/completions/history/2026-09-30-semantic-timer-pwm.md | historical | excerpt | 661f20d06eb7d8c63c4af2494d14a28df29fdaad69658c3117742c63f48ca2fc |
 | docs/completions/history/2026-10-09-compact-timer-pwm.md | historical | excerpt | b1936332f83992f5e31b045dbf65ba2c5b9a1038cc8096589fb8167cc059c1a7 |
 | docs/completions/history/2026-10-09-multichannel-pwm.md | historical | excerpt | 326dab505c93077c6ae432196c8f8abaffc4a5d21e51ef4d76ce756ec98b0f1a |
-| docs/logs/CHANGELOG.md | active | derived | c5b3521d2b15a9dca61007faba7a06a2a3c78f30b43c23175eb1d2d0d4887713 |
-| docs/logs/ai-generation-log.md | active | derived | 14a494f4308c04473eebdba9e866e20e065987516bdd739af844c2a49b4a3fd6 |
+| docs/logs/CHANGELOG.md | active | derived | f6784eefa350f09d65097e7b63d31be5eb02dd776cdea56db7a4ed2f9bd3c8b7 |
+| docs/logs/ai-generation-log.md | active | derived | d58294661d398ff2d09ffea8753b4d01262a22205df3ab8951224c2fa5330a98 |
 | docs/logs/history/framework-git-history.md | historical | git-history | 839375f898365e7a3506928cf60168a562f4e01327c427f9f09c8187ad5c3c9d |
 | docs/logs/history/kg200z-framework-ai-log.md | historical | excerpt | c9520d89173897db9e0ddf0475e2d41fd25fa375a0e455072d5695d333818069 |
 | docs/logs/history/kg200z-framework-changelog.md | historical | excerpt | cac302c77343f3eaa28ab1d489c07bf56bb53e54a7875ff1839020e5a657159e |
@@ -85,12 +86,12 @@ Paths and hashes are relative to this framework checkout.
 | docs/plans/history/2026-09-30-semantic-timer-pwm.md | historical | excerpt | 7a7fec73db8f4443dfc83f9c170eeeb449a354367849e839a9a8f54c032ca427 |
 | docs/specs/api-inventory.md | active | api-snapshot | e48234894a9749844b51d11ba218992e40506ed5c19ee99b62e5d4ffbabecd6c |
 | docs/specs/bus-guideline-draft.md | unverified | excerpt | 7c59c3c97b86d45df7e30bee6212e38020bb3f527c03388136d833d719a9f9bb |
-| docs/specs/current-architecture.md | active | derived | b71593bd668eacd88e206ca0b3254905642cb53389be6dc88259f07687bb6dad |
+| docs/specs/current-architecture.md | active | derived | 8b304e3c6040e6364e503adf63a94fec165c09ed1daaf9f88de16c6d6979931e |
 | docs/specs/draft-gap-review.md | unverified | derived | 0bdb52c394f1ff0e10b8c4c62b1220501bf837ce1c748a2bbc114fa5b04a7272 |
 | docs/specs/history/2026-08-14-port-reuse.md | historical | excerpt | 17319fe524526127e9a7da79a1afd4822dac47279accfd0755000726499e5812 |
 | docs/specs/history/2026-09-17-resource-design.md | historical | excerpt | d2caf8c1d810f0a0ea0f03d55159774a20bf489019f7186492545052a199fbc3 |
 | docs/specs/history/legacy-framework-guide.md | historical | excerpt | 515b8c01558b68f2d2486aa29494254da8ae80db799037a78e2293191a98c022 |
-| docs/specs/host-integration.md | active | derived | f76c8ae5d6e283092f928f790be9c0b96f9ef975228004cb9d17f68c576ce39e |
+| docs/specs/host-integration.md | active | derived | 703da0efe843158de90fffc519efe989db7fd6f0346f83b85843dd4dd69d93aa |
 | docs/specs/legacy-path-map.md | active | derived | 7321a4ea9698a070231684606d347f888a42f6c3d4d7c957d427d20b6789d1d0 |
 | docs/specs/port-bsp-guideline-draft.md | unverified | excerpt | 99c0a633e89c045746f0204718dbd7d2f3396b0b7237715167c1aabbc8f0a101 |
 

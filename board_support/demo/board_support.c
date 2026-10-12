@@ -36,6 +36,12 @@ pwm_device_t *get_pwm_device(uint8_t index)
   return (pwm_device_t *)0;
 }
 
+can_device_t *get_can_device(uint8_t index)
+{
+  (void)index;
+  return (can_device_t *)0;
+}
+
 usr_status_t usr_port_board_init(void)
 {
   return USR_OK;

@@ -119,6 +119,14 @@ class DocumentationLibraryTest(unittest.TestCase):
         result = self.run_tool("check", expected=1)
         self.assertIn("agent instructions", result.stdout + result.stderr)
 
+    def test_check_ignores_text_line_ending_conversion(self):
+        self.run_tool("update")
+        state = self.root / "docs/specs/state.md"
+        text = state.read_text(encoding="utf-8")
+        state.write_bytes(text.replace("\r\n", "\n").replace("\r", "\n")
+                          .replace("\n", "\r\n").encode("utf-8"))
+        self.run_tool("check")
+
     def test_update_cannot_bless_a_changed_imported_fragment(self):
         fragment = "Original history.\n"
         (self.root / "docs/specs/state.md").write_text(

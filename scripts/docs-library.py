@@ -21,6 +21,14 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def document_digest(path):
+    data = path.read_bytes()
+    if path.suffix.lower() in {".md", ".py", ".ps1", ".json"}:
+        text = data.decode("utf-8").replace("\r\n", "\n").replace("\r", "\n")
+        data = text.encode("utf-8")
+    return digest(data)
+
+
 def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n",
                     encoding="utf-8")
@@ -144,10 +152,10 @@ def update():
         info = documents.get(path, {})
         entries.append({"path": path, "kind": info.get("kind", "tool-or-entry"),
                         "status": info.get("status", "active"),
-                        "sha256": digest(local_path(path).read_bytes())})
+                        "sha256": document_digest(local_path(path))})
     (ROOT / "AGENTS.md").write_text(indexed_agents(entries), encoding="utf-8", newline="\n")
     write_json(local_path(METADATA), {"schema_version": 1, "files": entries,
-                                    "agents_sha256": digest((ROOT / "AGENTS.md").read_bytes())})
+                                    "agents_sha256": document_digest(ROOT / "AGENTS.md")})
     print("[DOCS] Updated inventory and index for", len(entries), "files")
 
 
@@ -159,9 +167,9 @@ def check():
     if len(set(registered)) != len(registered) or set(registered) != set(paths):
         raise ValueError("documentation inventory differs from registered files")
     for item in entries:
-        if digest(local_path(item["path"]).read_bytes()) != item["sha256"]:
+        if document_digest(local_path(item["path"])) != item["sha256"]:
             raise ValueError("hash mismatch: " + item["path"])
-    if digest((ROOT / "AGENTS.md").read_bytes()) != metadata["agents_sha256"]:
+    if document_digest(ROOT / "AGENTS.md") != metadata["agents_sha256"]:
         raise ValueError("hash mismatch: agent instructions AGENTS.md")
     if (ROOT / "AGENTS.md").read_text(encoding="utf-8") != indexed_agents(entries):
         raise ValueError("documentation index is stale")

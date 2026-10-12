@@ -14,6 +14,7 @@
 | [AI 历史日志](../logs/history/kg200z-framework-ai-log.md) | 对应 AI 工作来源、检查限制和历史失败 | 有重复/混合条目；保留事实，不补造缺失归属 |
 | [Git 演进](../logs/history/framework-git-history.md) | 提取、BSP 移出、TIM/PWM 分离、timebase/IRQ 提交 | Git 提交只能证明源码演进，不能证明编译或运行 |
 | [本次文档完成记录](2026-10-10-portable-document-library.md) | 当前文档库与 ZIP 的实测命令/结果 | 文档验收，不是固件证据 |
+| [CAN/FDCAN 框架](2026-10-12-can-device-framework.md) | 公共 API 主机测试、resource 路由测试、H743 Debug/Release 构建和链接符号 | 未烧录；未验证真实 CAN 收发、过滤、ACK、bus-off 或 CAN FD 波形 |
 
 原主工程日志中的设备/CLI运行数据不是此次子模块文档库的验证范围，未整体导入。
 没有原始日志文件或准确 image/commit 的结论维持“历史文档报告”，不声称已独立复核。

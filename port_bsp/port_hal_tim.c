@@ -288,6 +288,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
   {
     timer->tick_count++;
   }
+
+  if (htim->Instance == TIM1)
+  {
+   HAL_IncTick();
+  }
 }
 
 

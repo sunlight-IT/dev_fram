@@ -74,4 +74,14 @@ typedef struct
                               uint32_t compare);
   usr_status_t (*get_status)(void *ctx, void *status);
 } dev_pwm_ops_t;
+
+typedef struct
+{
+  usr_status_t (*init)(void *ctx, const void *config);
+  usr_status_t (*deinit)(void *ctx);
+  usr_status_t (*send)(void *ctx, const void *frame,
+                       uint32_t timeout_ms);
+  usr_status_t (*recv)(void *ctx, void *frame);
+  usr_status_t (*get_status)(void *ctx, void *status);
+} dev_can_ops_t;
 #endif

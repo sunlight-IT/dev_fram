@@ -17,6 +17,7 @@ dev_fram/
 │   ├── dri_ops.h            驱动操作基类
 │   ├── dev_gpio.c/h
 │   ├── dev_i2c.c/h
+│   ├── dev_can.c/h
 │   ├── dev_pwm.c/h
 │   ├── dev_spi.c/h
 │   ├── dev_timer.c/h
@@ -27,6 +28,7 @@ dev_fram/
 │   ├── port_hal_dma.c/h
 │   ├── port_hal_gpio.c/h
 │   ├── port_hal_i2c.c/h
+│   ├── port_hal_can.c/h
 │   ├── port_hal_spi.c/h
 │   ├── port_hal_tim.c/h     TIM basic adapter
 │   ├── port_hal_pwm.c/h     independent PWM adapter
@@ -46,7 +48,7 @@ dev_fram/
 ├── rules/                   现行框架编码与文档规则
 ├── docs/                    specs/plans/logs/completions
 ├── scripts/                 文档检查、来源与 ZIP 导出
-├── tests/                   文档工具验收；不含固件测试
+├── tests/                   文档工具与 HAL 无关的公共驱动测试
 ├── usr_port.h               Port 层总头文件
 └── usr_port_hal.h           Port HAL 层总头文件
 ```

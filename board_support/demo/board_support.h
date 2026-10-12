@@ -15,6 +15,7 @@
 #include "dev_spi.h"
 #include "dev_timer.h"
 #include "dev_pwm.h"
+#include "dev_can.h"
 
 typedef enum
 {
@@ -33,5 +34,6 @@ time_dev_t    *get_time_device(void);
 i2c_device_t  *get_i2c_device(void);
 timer_device_t *get_timer_device(void);
 pwm_device_t  *get_pwm_device(uint8_t index);
+can_device_t  *get_can_device(uint8_t index);
 
 #endif /* __BOARD_SUPPORT_H__ */

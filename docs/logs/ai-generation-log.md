@@ -1,5 +1,18 @@
 # Framework AI Provenance
 
+## 2026-10-12 - CAN/FDCAN device framework
+
+- Agent: Codex in the shared H743 checkout; implementation followed an approved
+  design and an independent read-only subagent review.
+- Initial framework: `bb9c659fff03de48d35682f949bbed8b31e5473c`, clean.
+- Initial host: `68d328f20128e9d94beb95033c9f608f167f8264`, with an existing
+  `Core/Src/fdcan.c` data-timing edit that was preserved and incorporated.
+- Added portable CAN API, STM32 FDCAN adapter, demo getter, H743 resource binding,
+  fake-ops tests and resource-ownership checks. The host `.ioc` was explicitly
+  excluded because the project no longer uses it.
+- Verification and unverified hardware scope are recorded in
+  `docs/completions/2026-10-12-can-device-framework.md`.
+
 ## 2026-10-10 - Portable documentation library
 
 - Agent: Codex in the shared checkout; approved plan executed without commit/push.

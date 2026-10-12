@@ -1497,6 +1497,18 @@
       "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
     },
     {
+      "path": "docs/completions/2026-10-12-can-device-framework.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S010",
+        "S011",
+        "S028",
+        "S045"
+      ],
+      "transformation": "Authored from the pinned framework rules and API baseline plus explicitly labeled fresh observations from the current uncommitted host and framework worktrees."
+    },
+    {
       "path": "docs/specs/api-inventory.md",
       "kind": "api-snapshot",
       "status": "active",

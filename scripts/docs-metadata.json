@@ -5,7 +5,7 @@
       "path": "README.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "27ab27bb64f7082c7997f80c2782c95d92b7817f952fc764d7581d8c99f48ee9"
+      "sha256": "0cae375cc5433b3a36c4589733c1b0112a947197ad60b1ab04f179f73aaf7904"
     },
     {
       "path": "docs/README.md",
@@ -20,6 +20,12 @@
       "sha256": "38fbcf7592382ad9db4a587ba3a5f6a8a846ce43ad9382133c5d2a2fc028d253"
     },
     {
+      "path": "docs/completions/2026-10-12-can-device-framework.md",
+      "kind": "derived",
+      "status": "active",
+      "sha256": "90eba777c6d2ca9fd3dc0a41bb480eaee5d5315238e802bf677ca2f6246ebb30"
+    },
+    {
       "path": "docs/completions/TEMPLATE.md",
       "kind": "derived",
       "status": "active",
@@ -29,7 +35,7 @@
       "path": "docs/completions/evidence-index.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "1165e491c57457f16b5a6144714a2d6844116d14a11357fa5055125e6b0b09c5"
+      "sha256": "e777c3c37fa8cf02d70a85e3d3b7a3825ddeaf98f0d9beab4cc1e0a67a68fab8"
     },
     {
       "path": "docs/completions/history/2026-09-29-document-governance.md",
@@ -65,13 +71,13 @@
       "path": "docs/logs/CHANGELOG.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "c5b3521d2b15a9dca61007faba7a06a2a3c78f30b43c23175eb1d2d0d4887713"
+      "sha256": "f6784eefa350f09d65097e7b63d31be5eb02dd776cdea56db7a4ed2f9bd3c8b7"
     },
     {
       "path": "docs/logs/ai-generation-log.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "14a494f4308c04473eebdba9e866e20e065987516bdd739af844c2a49b4a3fd6"
+      "sha256": "d58294661d398ff2d09ffea8753b4d01262a22205df3ab8951224c2fa5330a98"
     },
     {
       "path": "docs/logs/history/framework-git-history.md",
@@ -149,7 +155,7 @@
       "path": "docs/specs/current-architecture.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "b71593bd668eacd88e206ca0b3254905642cb53389be6dc88259f07687bb6dad"
+      "sha256": "8b304e3c6040e6364e503adf63a94fec165c09ed1daaf9f88de16c6d6979931e"
     },
     {
       "path": "docs/specs/draft-gap-review.md",
@@ -179,7 +185,7 @@
       "path": "docs/specs/host-integration.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "f76c8ae5d6e283092f928f790be9c0b96f9ef975228004cb9d17f68c576ce39e"
+      "sha256": "703da0efe843158de90fffc519efe989db7fd6f0346f83b85843dd4dd69d93aa"
     },
     {
       "path": "docs/specs/legacy-path-map.md",
@@ -215,13 +221,13 @@
       "path": "scripts/docs-library.py",
       "kind": "derived",
       "status": "active",
-      "sha256": "f65da0b3ca46c0cc1050a25759a66fb0bfc945c3942276e96a5b5edd7007e4ed"
+      "sha256": "b580ad842725131af50c28530cddae097a11e0e41c2c569b1f1b84ecc81e57e5"
     },
     {
       "path": "scripts/docs-sources.json",
       "kind": "tool-or-entry",
       "status": "active",
-      "sha256": "85d33917bf7bd73df6dd62d22589da23ffdde49211dca0dff4f668e3f5c7de07"
+      "sha256": "236b6f67821334b0c960fdbeef098c96d459f6f678dc02893eade3436f5b95a5"
     },
     {
       "path": "scripts/import-kg200z-history.py",
@@ -239,8 +245,8 @@
       "path": "tests/docs_library_test.py",
       "kind": "derived",
       "status": "active",
-      "sha256": "ead01b9a28f30a0c1f127875d08964150e67a0e19fa1097a5cc738166718aca9"
+      "sha256": "915a45c19de183abb764ed2b4a1724f9db705584599346b1a9ebf933623d76d9"
     }
   ],
-  "agents_sha256": "af546b5232cedba1cf74f1e2d2168f6f352a2e1105823172dd80a899db7bcdcd"
+  "agents_sha256": "bc2af71b89a8ac20a5e9097040ffe96c362474bf9f71670a6b2142a2d2748513"
 }
