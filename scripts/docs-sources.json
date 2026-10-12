@@ -1,0 +1,1560 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "date": "2026-10-10",
+    "framework_commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+    "host_commit": "8ab7a95033b30b5848def22971a35bacab766645"
+  },
+  "repositories": {
+    "framework": "https://github.com/sunlight-IT/dev_fram",
+    "host": "https://github.com/sunlight-IT/KG200Z_LORAWAN"
+  },
+  "sources": [
+    {
+      "id": "S001",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/plans/2026-08-17-mx-peripheral-configuration-ownership.md",
+      "git_blob": "2f867fa332fbac9f9f30ebeacabbca6a850cb914",
+      "sha256": "20ffff8ce8fea0cdb6ee787b93dcc66c5b3f20f23851fc0f2bd7314f8b9aadb0",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/plans/2026-08-17-mx-peripheral-configuration-ownership.md"
+    },
+    {
+      "id": "S002",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/plans/2026-09-03-rtthread-style-port-resource-decoupling.md",
+      "git_blob": "230d2eaaa832d05854a98cd1e46038d6e0c9bad8",
+      "sha256": "349225334044993aeec82d6deee5954b2451a8d7499cf2c77f9a74913128eecd",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/plans/2026-09-03-rtthread-style-port-resource-decoupling.md"
+    },
+    {
+      "id": "S003",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/plans/2026-09-10-uart-clock-dma-resource-decoupling.md",
+      "git_blob": "e13b3d0b6bc8ce4af9e860d75e53c8504de35967",
+      "sha256": "6fa2cf188c86f873e4888e95911b2ac689053494688eeb6e77e8d2c7f2978ec8",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/plans/2026-09-10-uart-clock-dma-resource-decoupling.md"
+    },
+    {
+      "id": "S004",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/plans/2026-09-12-usr-check-macro-pilot.md",
+      "git_blob": "162622dc4032eeedcfee73c783d0cffb402c4cdc",
+      "sha256": "3d046afdf18e293e6ffcc1eb272f867ba1caab35881d581c47df64ac642eb500",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/plans/2026-09-12-usr-check-macro-pilot.md"
+    },
+    {
+      "id": "S005",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/plans/2026-09-17-gpio-i2c-dma-resource-decoupling.md",
+      "git_blob": "f8106e5613e1bb9301c17e467033f7f160dfb881",
+      "sha256": "636781d7baff97a11315a593aed7818473703567b72e7583790ccfd9aa414658",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/plans/2026-09-17-gpio-i2c-dma-resource-decoupling.md"
+    },
+    {
+      "id": "S006",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/plans/2026-09-30-semantic-timer-pwm-resource-architecture.md",
+      "git_blob": "bb8ac31655127e5271ec76819b8a71f65e08b831",
+      "sha256": "0eff5753cf69cd772bf680e005c6ed9d67002cee3da0e26ea217475e7a5138f7",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/plans/2026-09-30-semantic-timer-pwm-resource-architecture.md"
+    },
+    {
+      "id": "S007",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/specs/2026-08-14-usr-port-reuse-design.md",
+      "git_blob": "5fddefd2604e84e605581e1d627c62903ba00e34",
+      "sha256": "e7563615af74f3293d4345169e3b94c0fa92b922de53cdefb62d254c16a855f1",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/specs/2026-08-14-usr-port-reuse-design.md"
+    },
+    {
+      "id": "S008",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/specs/2026-09-17-gpio-i2c-dma-resource-decoupling-design.md",
+      "git_blob": "7bf9da018d5c2207dea49a986fc4ec6e64ed99a0",
+      "sha256": "110d731bb7e6fa1fcfae6d52fa93420f8444e29522ff848f3a6bf94e71db2c34",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/specs/2026-09-17-gpio-i2c-dma-resource-decoupling-design.md"
+    },
+    {
+      "id": "S009",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "Usr/DEVICE_DRIVER_FRAMEWORK.md",
+      "git_blob": "db7229df36d00c9e7564fca992d2abd0edfdd52b",
+      "sha256": "e85015f9fd6c365f28907328e28800e670fedc312d26956f74eede24b2ee4a02",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/Usr/DEVICE_DRIVER_FRAMEWORK.md"
+    },
+    {
+      "id": "S010",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/specs/2026-09-29-cross-project-device-driver-guideline.md",
+      "git_blob": "da1eb393893d010041959f43d2a2a5f5ee039b87",
+      "sha256": "ef44d154987ffa9f9091d66b46ca5b1e9b060654e29e9036cf00320eb44afbe4",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/specs/2026-09-29-cross-project-device-driver-guideline.md"
+    },
+    {
+      "id": "S011",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/specs/2026-09-29-cross-project-port-bsp-guideline.md",
+      "git_blob": "e4b97aed31d45f256d030601833d25fd9a4a1e14",
+      "sha256": "1c65f13b054b36b4d504520736b1409cca1f27e38c17cc535cd5f88499bbdb98",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/specs/2026-09-29-cross-project-port-bsp-guideline.md"
+    },
+    {
+      "id": "S012",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/completions/2026-09-30-semantic-timer-pwm-resource-architecture.md",
+      "git_blob": "3c6dbbb2d16db870d150a08e67c9ffc0f8152fb1",
+      "sha256": "560d71a58ba21223e45b0322658e55f2acd94017bdf2b30a23570a592ed09199",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/completions/2026-09-30-semantic-timer-pwm-resource-architecture.md"
+    },
+    {
+      "id": "S013",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/completions/2026-10-09-compact-timer-pwm-port.md",
+      "git_blob": "9f76bdb78952caa06a1a705bbdd9f803477ba9f7",
+      "sha256": "29b4151bc8b66133b65261a867c25eb69b0ae585dbb6a86bebe094c8e1f6b30b",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/completions/2026-10-09-compact-timer-pwm-port.md"
+    },
+    {
+      "id": "S014",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/completions/2026-10-09-multichannel-pwm.md",
+      "git_blob": "1cbc3a6815c9e289c3867875c53b0649ab64d75b",
+      "sha256": "c7acb79f71037e22e224d543bc3feab3710d88d43669cbc2c15d12373e0cd623",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/completions/2026-10-09-multichannel-pwm.md"
+    },
+    {
+      "id": "S015",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/completions/2026-09-29-cross-project-guidelines.md",
+      "git_blob": "d992de11e7be0cace941653bc7ed1a68368d2397",
+      "sha256": "6a329bf6d4ff77ebdc5459e285cfadfc65613a78aa19c7a1578e0654ca9e2e7d",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/completions/2026-09-29-cross-project-guidelines.md"
+    },
+    {
+      "id": "S016",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/completions/2026-09-29-documentation-taxonomy-and-index.md",
+      "git_blob": "eca04cbd7f6c460b84d1630193fdffa6f62d273f",
+      "sha256": "df20e579df7d5e48c131f3bfb293f6272bacd94fcc4d30a109f7eaf85b799d6e",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/completions/2026-09-29-documentation-taxonomy-and-index.md"
+    },
+    {
+      "id": "S017",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/logs/CHANGELOG.md",
+      "git_blob": "a89716381f53d98e524405f92ba7f81694da1a61",
+      "sha256": "89c8df775ac9bc4d8fd4e33036076e19641dce8361120b47d3bb0e52478298a5",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/logs/CHANGELOG.md"
+    },
+    {
+      "id": "S018",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/logs/ai-generation-log.md",
+      "git_blob": "03b9283204ba2e47876ce2ce65b2837e8be6b0c3",
+      "sha256": "6d2370570d2a3258d4e4dd2deaf845bba41ece88054a3eafbc3a53bc743f86cc",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/logs/ai-generation-log.md"
+    },
+    {
+      "id": "S019",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "AGENTS.md",
+      "git_blob": "0babb1265ec88c065e5209793c8912c708e9f8ea",
+      "sha256": "3565a5eddfa8ca96ee4a1b2ea010f8f997f962e03a91ecf0348e28976be3d1fd",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/AGENTS.md"
+    },
+    {
+      "id": "S020",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": ".codex/rules/firmware.md",
+      "git_blob": "d237691a83c0c4fd7059a54c27cf92021ce0f0d0",
+      "sha256": "3937a9ab222fbfca521a48371c2b5f1488fea5016a32e0abacd96463909b39de",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/.codex/rules/firmware.md"
+    },
+    {
+      "id": "S021",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": ".codex/rules/git.md",
+      "git_blob": "c7c7a81cfbc52bdb2a67a2331ad8e98f6a638e2f",
+      "sha256": "198f9582c25668cd908e0bcd8f6537875daee48caebd572532534367f7f67925",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/.codex/rules/git.md"
+    },
+    {
+      "id": "S022",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": ".codex/rules/documentation.md",
+      "git_blob": "ac83a0e3058e53d9a802e523552a42b58e8f805c",
+      "sha256": "762c2176ae4a4c16edee0c0aa97a7d5275088ad313d03cafb5995ad67dfff50f",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/.codex/rules/documentation.md"
+    },
+    {
+      "id": "S023",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/README.md",
+      "git_blob": "d745d9c1d3811f41c743c9ceecfacd02b96e49f5",
+      "sha256": "bca07f24b8dc75913aa2aa88cd4e4efd4139fc7d2568bd55e873971e295aeb39",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/README.md"
+    },
+    {
+      "id": "S024",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "docs/completions/TEMPLATE.md",
+      "git_blob": "60b8d3239e35fbf30e391e3918d5fe581bef21f4",
+      "sha256": "7e0ae5a5c101406cf1716247093b827296f8d0daf6334f07a745375ac3dd8ec3",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/docs/completions/TEMPLATE.md"
+    },
+    {
+      "id": "S025",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "scripts/docs-index.ps1",
+      "git_blob": "17e5dc7ae753caf18096a26719684f3f3c98c60a",
+      "sha256": "01a14e2f7c59fe8a2cc49abe9160b960125bbb9d4dc9ca704a70ab0c4984611c",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/scripts/docs-index.ps1"
+    },
+    {
+      "id": "S026",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "scripts/docs-guideline-check.ps1",
+      "git_blob": "cda15168769beee0babb35e0e39c71c44da618c5",
+      "sha256": "219ed70f1151ccb9c3ac9f535d00ffed910191399db817eb314404bf52ca94e1",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/scripts/docs-guideline-check.ps1"
+    },
+    {
+      "id": "S027",
+      "repository": "host",
+      "commit": "8ab7a95033b30b5848def22971a35bacab766645",
+      "path": "scripts/docs-metadata.json",
+      "git_blob": "8e70d7a305d1dcc3770588ebb31c78c8311e00e0",
+      "sha256": "a6b738afcb97ee891d359f5cb5ad5fad654ff00815a37b169320455ef0e1f00d",
+      "url": "https://github.com/sunlight-IT/KG200Z_LORAWAN/blob/8ab7a95033b30b5848def22971a35bacab766645/scripts/docs-metadata.json"
+    },
+    {
+      "id": "S028",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "README.md",
+      "git_blob": "7ef8f42aa001b38857679cdc4df20f6897a68531",
+      "sha256": "62479b1feb80355b7cb9a5d541c68c77cd96d7f803b8490ccb95a88e01846245",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/README.md"
+    },
+    {
+      "id": "S029",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "board_support/demo/board_support.c",
+      "git_blob": "ab7a99e6b7346ada1d66267036258892d5c9c6d7",
+      "sha256": "5406425cac7fcaaff6cc4040f9de9f0a0d594742c0cb9b85e39a287721493fbd",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/board_support/demo/board_support.c"
+    },
+    {
+      "id": "S030",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "board_support/demo/board_support.h",
+      "git_blob": "4114090456d13fb537eed301df2a03c13b421aa4",
+      "sha256": "7d48adc5fe2ddc82640599a74d4c48ddf5772bd65e402b84dada587e0a07b5ae",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/board_support/demo/board_support.h"
+    },
+    {
+      "id": "S031",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "board_support/demo/usr_common.h",
+      "git_blob": "acd922d3bdc57ed132426b53e4969ccba6514549",
+      "sha256": "b884b24a6973a4991a9ccdd190c7e2ce5884e5d6468a3857e331dcdb4c3c5670",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/board_support/demo/usr_common.h"
+    },
+    {
+      "id": "S032",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "board_support/demo/usr_port_platform.c",
+      "git_blob": "eef71084f89def52ddf2c0aeca7e4bc48f53985d",
+      "sha256": "b0bc7120c4117846981bed6d08dcd6e83b825caabf3e68a157d6bfb2ba91abab",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/board_support/demo/usr_port_platform.c"
+    },
+    {
+      "id": "S033",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_gpio.c",
+      "git_blob": "ad5a91e37ef43329343905c5c87b38c6fd047e14",
+      "sha256": "4a91b476c00d7d044883145f3958980026a0e965446f9ae092d93d6d39b24118",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_gpio.c"
+    },
+    {
+      "id": "S034",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_gpio.h",
+      "git_blob": "ab6df548f21357fbd6ea482b1fd55b1b2968ea4b",
+      "sha256": "220e997f4b0b33f8cb8321e7b1d93ec158cbf6a02b1e527ffe686c0c4f5bf4be",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_gpio.h"
+    },
+    {
+      "id": "S035",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_i2c.c",
+      "git_blob": "f53fbbd659f087ad3b5ba13536f9dce50273fb5f",
+      "sha256": "d0fae98a139ad8e4912037a4b202406e48dcc620788f04456d6f888d31e5bee0",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_i2c.c"
+    },
+    {
+      "id": "S036",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_i2c.h",
+      "git_blob": "aca40096cc179392677fccfd311fd650a0f22d4f",
+      "sha256": "80b5fd9890d3610f8eac20f63a89e0e093a0e81912f6eb182481bfb81573f23b",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_i2c.h"
+    },
+    {
+      "id": "S037",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_pwm.c",
+      "git_blob": "e09b029061f32a567512dc4e2193ca6d7ca1b546",
+      "sha256": "a4c1f45f0f41dedcd89c6eec2edd3876918bbbe5c4d84117484c773b80c5965a",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_pwm.c"
+    },
+    {
+      "id": "S038",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_pwm.h",
+      "git_blob": "de0a8fb7f10bf491fa3d7b560f1b8c063230780d",
+      "sha256": "336c9a1be2e313cc011ee2295ca8809a94d1b244edc044a7fa9c8cf98efd7f4b",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_pwm.h"
+    },
+    {
+      "id": "S039",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_spi.c",
+      "git_blob": "06a1c4627add86fd19f069be161975c693c44da2",
+      "sha256": "fc20fe7810c2c8d109a6e656366b734e8c4faf8aaf8e7c655099e93be76fe96c",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_spi.c"
+    },
+    {
+      "id": "S040",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_spi.h",
+      "git_blob": "720e711a2a3b348d3f860cfcdc1dee23a1fc3229",
+      "sha256": "2e82d8437a39bb6ce9201235606062970c4738192e57b81bfc0e9a2b2ca032af",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_spi.h"
+    },
+    {
+      "id": "S041",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_timer.c",
+      "git_blob": "8ec59902ed689047bc480f9b7c19d6a2cdb4be6e",
+      "sha256": "d864565b3f13d87b69ecc9e405c533eb92b53d7cffdc56bc6154b5ac7e12eba4",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_timer.c"
+    },
+    {
+      "id": "S042",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_timer.h",
+      "git_blob": "7364f1be9bf6e0a6da1e813a46c7e0c3e5608edb",
+      "sha256": "c612e29893d631dd32370e50cbb5d0c20355b34ba72632bb891c11a2049a8ab1",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_timer.h"
+    },
+    {
+      "id": "S043",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_uart.c",
+      "git_blob": "5777c00cd2b7d05b118c23cfa711d3e31bf957fa",
+      "sha256": "3897f7507b2c785339ebad0dcec6f2dd999938d93dc948f7b81ae45357b05d57",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_uart.c"
+    },
+    {
+      "id": "S044",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dev_uart.h",
+      "git_blob": "cb82e3dfadb43179a82cbc88ea0946b79e432188",
+      "sha256": "d2f5741a742cb97e666f8e401b8d5d744f5c0972a16bce599d23fe2c87e52124",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dev_uart.h"
+    },
+    {
+      "id": "S045",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "bus/dev/dri_ops.h",
+      "git_blob": "be6c5f4a780677451ca78c7867beec37471bd7f0",
+      "sha256": "bbf37aee37e2bc26022ccc5da2293d06966d5b5460adf2e9b1290b67677e8255",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/bus/dev/dri_ops.h"
+    },
+    {
+      "id": "S046",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "common/usr_check.h",
+      "git_blob": "3fef78bd903cf2278a95ef2d0d5b453a51f37523",
+      "sha256": "b8738227ee27f031789ac23b2ebaff12f7c118120c34b43981fcf6931def1234",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/common/usr_check.h"
+    },
+    {
+      "id": "S047",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "component/ring_buf.c",
+      "git_blob": "bb11ec88542e0e08c8c3df8d381a3df680ba08f1",
+      "sha256": "2c1f3b9b1c63d78c1f1fd7fe07d979c28e1cb19eea0ab9826ffa31342bc75c6e",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/component/ring_buf.c"
+    },
+    {
+      "id": "S048",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "component/ring_buf.h",
+      "git_blob": "3db03f0012eb2ede8f9bd864e0c6924b36d9bf6e",
+      "sha256": "624ffceae682edc4d5f6569bb10c1721ca05418ed4b7969f75bd37b7f087fd99",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/component/ring_buf.h"
+    },
+    {
+      "id": "S049",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "log/my_log.h",
+      "git_blob": "327df4e2bc0776e56b8530a73b93349f84f04591",
+      "sha256": "de9186860ba98c01cebb943f2c79df43eb18fa4dbb36e8e66f80ec45610b0997",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/log/my_log.h"
+    },
+    {
+      "id": "S050",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port.h",
+      "git_blob": "27f83fc49b561d37809eadecd44fda5f4a7414e1",
+      "sha256": "add62d4c7280a3c7db86cf1597ccecc212680c35e82267baa7703a18c7280c77",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port.h"
+    },
+    {
+      "id": "S051",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_clock.h",
+      "git_blob": "dba172ebaf5c4558087c5e7c01f92f82011aacfc",
+      "sha256": "986b9f87ad710e045bd7d9894d7e25dad8bbdc7782936cd05b8f859088611323",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_clock.h"
+    },
+    {
+      "id": "S052",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_dma.c",
+      "git_blob": "7684718e684ffec477be9f7ade28f8d2d3a129af",
+      "sha256": "85ced459b051b2749c6ec35c0f35a465a6c43efb2c4efc13e3aa7a469fb5a6cd",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_dma.c"
+    },
+    {
+      "id": "S053",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_dma.h",
+      "git_blob": "4679e53079b575ebb2c79366defbe154791f7a0c",
+      "sha256": "f9a2dcb9a8a4b3cfe88ee420be5f8de897487d3dd4a9f4007801f161deddac06",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_dma.h"
+    },
+    {
+      "id": "S054",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_gpio.c",
+      "git_blob": "48063d226dc55e29b74462746bd188c935e5873b",
+      "sha256": "fb240a5c6ed09b1a7732b70a5726255a87b824a0df7b7868be4998c2795fd288",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_gpio.c"
+    },
+    {
+      "id": "S055",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_gpio.h",
+      "git_blob": "ab8217dfb1982adf5c5bfd472eb2cf5a3395f563",
+      "sha256": "0cb335eef825740dfc02db83d8cd3952596b332c8288e3f73ea5dbf790bb3281",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_gpio.h"
+    },
+    {
+      "id": "S056",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_i2c.c",
+      "git_blob": "882385a32c021da2c6b16620dcc8ab26265e8852",
+      "sha256": "6864024b098694b48943c409b489783da1b2724aca7c1ed7f814fb7d0ccffa74",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_i2c.c"
+    },
+    {
+      "id": "S057",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_i2c.h",
+      "git_blob": "f8373ed27d93d808fc9aba533fd2bb44fd7d51a2",
+      "sha256": "56987ebd2e0c7c2a7cd0359b7b5ae6aa0683e4ac156ed7ad2ff4ddcc5acbae99",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_i2c.h"
+    },
+    {
+      "id": "S058",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_pwm.c",
+      "git_blob": "cc6572ccc45ede89ec3b725fc880b330d8d66acf",
+      "sha256": "5a921356562e5788d0a3c61353a0872b980c2c47787bfa791b998faa8717787e",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_pwm.c"
+    },
+    {
+      "id": "S059",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_pwm.h",
+      "git_blob": "75936a5775e95194a970c85144e8ebdf175a3eda",
+      "sha256": "18a5394b12e439976ae0947c348cc4bdaf1a5ea623e0d8abde3f3ba858932d69",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_pwm.h"
+    },
+    {
+      "id": "S060",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_spi.c",
+      "git_blob": "4d5c15a2871955aeea04fd958f4160cebb41385e",
+      "sha256": "a758c7e5dc258e95b8a30dff24cea0b9aa6bfa7890311f01f4c67db89f00c5ca",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_spi.c"
+    },
+    {
+      "id": "S061",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_spi.h",
+      "git_blob": "2b69d3d0f5c9b1c18d1662c29e1a74a9eaa3fa5e",
+      "sha256": "0cf243a3cd17c4f7d12be36d55752b8a183d46cf8006b1502d386cbe8cb58825",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_spi.h"
+    },
+    {
+      "id": "S062",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_tim.c",
+      "git_blob": "09866704966cd361c7be82e167c5ea210f49be83",
+      "sha256": "e42f344d805eecd525b1502c07ffb59ed8771bfb6cec0c7325d59b7d68f371bf",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_tim.c"
+    },
+    {
+      "id": "S063",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_tim.h",
+      "git_blob": "2ed60dfc5319ea87c0adfc9418ead99890a51be8",
+      "sha256": "9043eea14ccf7f5a6a1fca333812e9a9ea3a636571f375550b16a202c370eea6",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_tim.h"
+    },
+    {
+      "id": "S064",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_uart.c",
+      "git_blob": "8b2cccd23f5ad4c317bc2ed9e8f3e7a1f445627e",
+      "sha256": "83e1765dbe5de5745dba147dc4145238ddf8f0b09ade62e677fdea1ce76c874c",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_uart.c"
+    },
+    {
+      "id": "S065",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "port_bsp/port_hal_uart.h",
+      "git_blob": "e381f415e1df8b1289a76051e88368cc1ab91957",
+      "sha256": "549dce9e345fb002a13dc843309c1993bdd7098225949083c3940080d5f8d39d",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/port_bsp/port_hal_uart.h"
+    },
+    {
+      "id": "S066",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "usr_port.h",
+      "git_blob": "8e84f0a8abc2fbb13b13ffc842ee67d60140041f",
+      "sha256": "16964eb3e209f42ed282c35322ff55e75f79d4653bcc1d4849536df4ba82b9dd",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/usr_port.h"
+    },
+    {
+      "id": "S067",
+      "repository": "framework",
+      "commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "path": "usr_port_hal.h",
+      "git_blob": "4b5b5e6c5f3bbb138106e247ecfa592dba6aa942",
+      "sha256": "a6bdcac87b4c0f0c7d217063313462a4c3222dfa8133cadf46637012a074075f",
+      "url": "https://github.com/sunlight-IT/dev_fram/blob/d29419be990aa562bcbacabb17ac9c78b31a0908/usr_port_hal.h"
+    }
+  ],
+  "documents": [
+    {
+      "path": "docs/plans/history/2026-08-17-mx-ownership.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S001"
+      ],
+      "source_path": "docs/plans/2026-08-17-mx-peripheral-configuration-ownership.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Superseded ownership proposal. Selected UART/SPI/I2C/GPIO contracts; omitted application and chip-driver changes.",
+      "fragments": [
+        {
+          "id": "S001-F1",
+          "lines": [
+            1,
+            40
+          ],
+          "original_sha256": "38c4269bc973c90e3bd4abcbacf5206cca8d9126fa4817b42c0298cdc089ece0",
+          "sha256": "38c4269bc973c90e3bd4abcbacf5206cca8d9126fa4817b42c0298cdc089ece0"
+        },
+        {
+          "id": "S001-F2",
+          "lines": [
+            123,
+            188
+          ],
+          "original_sha256": "5531fcd4ae66fb27c5c817cf152e4eb507f77a18ac32560955c592fd5dd1e568",
+          "sha256": "5531fcd4ae66fb27c5c817cf152e4eb507f77a18ac32560955c592fd5dd1e568"
+        },
+        {
+          "id": "S001-F3",
+          "lines": [
+            218,
+            323
+          ],
+          "original_sha256": "e22758863c495b0a2a83314c4166eb5c551837773529cb0e4ae83d707b2f3fbd",
+          "sha256": "e22758863c495b0a2a83314c4166eb5c551837773529cb0e4ae83d707b2f3fbd"
+        },
+        {
+          "id": "S001-F4",
+          "lines": [
+            363,
+            446
+          ],
+          "original_sha256": "b7c762a3db17545c6e6e81b5aa5c494a724383e0c989596876fbf77f6db3567b",
+          "sha256": "b7c762a3db17545c6e6e81b5aa5c494a724383e0c989596876fbf77f6db3567b"
+        },
+        {
+          "id": "S001-F5",
+          "lines": [
+            462,
+            490
+          ],
+          "original_sha256": "6905c72d85ec3fd291352067f53a6408dc78d3fbbc9f3d3f476a6288e85f7185",
+          "sha256": "6905c72d85ec3fd291352067f53a6408dc78d3fbbc9f3d3f476a6288e85f7185"
+        }
+      ]
+    },
+    {
+      "path": "docs/plans/history/2026-09-03-resource-decoupling.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S002"
+      ],
+      "source_path": "docs/plans/2026-09-03-rtthread-style-port-resource-decoupling.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Architecture, private descriptors and reusable wrappers only. RT-Thread was a reference model, not an RTOS dependency.",
+      "fragments": [
+        {
+          "id": "S002-F1",
+          "lines": [
+            1,
+            136
+          ],
+          "original_sha256": "7ac1f8380dc9cc361380f133e4a245684dfe2cc93de0835337129f545a380260",
+          "sha256": "7ac1f8380dc9cc361380f133e4a245684dfe2cc93de0835337129f545a380260"
+        },
+        {
+          "id": "S002-F2",
+          "lines": [
+            179,
+            294
+          ],
+          "original_sha256": "ade9824bc13d292a4aa50a27dc566acd8ed9fa796f253a61513a15cdd39e0383",
+          "sha256": "ade9824bc13d292a4aa50a27dc566acd8ed9fa796f253a61513a15cdd39e0383"
+        },
+        {
+          "id": "S002-F3",
+          "lines": [
+            440,
+            459
+          ],
+          "original_sha256": "e5b7a8a0fa63dd19417550cd68000bd695df2e4c3ad35ad9d3b2ea5c1100d12b",
+          "sha256": "e5b7a8a0fa63dd19417550cd68000bd695df2e4c3ad35ad9d3b2ea5c1100d12b"
+        }
+      ]
+    },
+    {
+      "path": "docs/plans/history/2026-09-10-uart-clock-dma.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S003"
+      ],
+      "source_path": "docs/plans/2026-09-10-uart-clock-dma-resource-decoupling.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Historical UART/MSP/DMA contracts. Physical mappings and retained Core ownership apply only to the old host version.",
+      "fragments": [
+        {
+          "id": "S003-F1",
+          "lines": [
+            1,
+            111
+          ],
+          "original_sha256": "5ffd9522a21fad5bfe763d209c617d0e23c96dc4609c63d7e1782f605dc698a4",
+          "sha256": "5ffd9522a21fad5bfe763d209c617d0e23c96dc4609c63d7e1782f605dc698a4"
+        },
+        {
+          "id": "S003-F2",
+          "lines": [
+            219,
+            592
+          ],
+          "original_sha256": "3eb4ef8841375737308ce94f6bebeb6561e8496afd78346d389ec13bf5825728",
+          "sha256": "3eb4ef8841375737308ce94f6bebeb6561e8496afd78346d389ec13bf5825728"
+        },
+        {
+          "id": "S003-F3",
+          "lines": [
+            879,
+            892
+          ],
+          "original_sha256": "22519b86ed844078cc3bce0e5d25df439d06410e0687343d311515ea6343e92c",
+          "sha256": "22519b86ed844078cc3bce0e5d25df439d06410e0687343d311515ea6343e92c"
+        }
+      ]
+    },
+    {
+      "path": "docs/plans/history/2026-09-12-guard-macros.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S004"
+      ],
+      "source_path": "docs/plans/2026-09-12-usr-check-macro-pilot.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Complete framework-only pilot plan, preserved as a proposal rather than completion evidence.",
+      "fragments": [
+        {
+          "id": "S004-F1",
+          "lines": [
+            1,
+            68
+          ],
+          "original_sha256": "3d046afdf18e293e6ffcc1eb272f867ba1caab35881d581c47df64ac642eb500",
+          "sha256": "3d046afdf18e293e6ffcc1eb272f867ba1caab35881d581c47df64ac642eb500"
+        }
+      ]
+    },
+    {
+      "path": "docs/plans/history/2026-09-17-gpio-i2c-dma.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S005"
+      ],
+      "source_path": "docs/plans/2026-09-17-gpio-i2c-dma-resource-decoupling.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Resource-consumer ownership plan. Host pins, build and reviewer instructions remain historical.",
+      "fragments": [
+        {
+          "id": "S005-F1",
+          "lines": [
+            1,
+            79
+          ],
+          "original_sha256": "636781d7baff97a11315a593aed7818473703567b72e7583790ccfd9aa414658",
+          "sha256": "636781d7baff97a11315a593aed7818473703567b72e7583790ccfd9aa414658"
+        }
+      ]
+    },
+    {
+      "path": "docs/plans/history/2026-09-30-semantic-timer-pwm.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S006"
+      ],
+      "source_path": "docs/plans/2026-09-30-semantic-timer-pwm-resource-architecture.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Capture, claims and calculators were subsequently removed. Excludes the application-integration task.",
+      "fragments": [
+        {
+          "id": "S006-F1",
+          "lines": [
+            1,
+            85
+          ],
+          "original_sha256": "0adf3f8b8326eaea72eeaf5c01ba9621100b1e3d144cfd91ceac3eab4d911764",
+          "sha256": "0adf3f8b8326eaea72eeaf5c01ba9621100b1e3d144cfd91ceac3eab4d911764"
+        }
+      ]
+    },
+    {
+      "path": "docs/specs/history/2026-08-14-port-reuse.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S007"
+      ],
+      "source_path": "docs/specs/2026-08-14-usr-port-reuse-design.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Bus/port boundaries and error mapping. MX-only configuration ownership is historical.",
+      "fragments": [
+        {
+          "id": "S007-F1",
+          "lines": [
+            1,
+            64
+          ],
+          "original_sha256": "286a1a19c4aedaeca9228687040b3e5ff3fe7a99c9dfa135dd2644a4e0fa787e",
+          "sha256": "286a1a19c4aedaeca9228687040b3e5ff3fe7a99c9dfa135dd2644a4e0fa787e"
+        },
+        {
+          "id": "S007-F2",
+          "lines": [
+            79,
+            92
+          ],
+          "original_sha256": "ba86d617bc15ae77e8e5e8dbec24eda059c30c7e36b0a95d4935b9446409dec9",
+          "sha256": "ba86d617bc15ae77e8e5e8dbec24eda059c30c7e36b0a95d4935b9446409dec9"
+        }
+      ]
+    },
+    {
+      "path": "docs/specs/history/2026-09-17-resource-design.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S008"
+      ],
+      "source_path": "docs/specs/2026-09-17-gpio-i2c-dma-resource-decoupling-design.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Hardware mapping is old KG200Z context; it is not a portable board definition.",
+      "fragments": [
+        {
+          "id": "S008-F1",
+          "lines": [
+            1,
+            69
+          ],
+          "original_sha256": "9bb5b247ff95931cbe715a0b9428c2b39aba972dcf9553d12f9de05a7c93e4fa",
+          "sha256": "9bb5b247ff95931cbe715a0b9428c2b39aba972dcf9553d12f9de05a7c93e4fa"
+        },
+        {
+          "id": "S008-F2",
+          "lines": [
+            88,
+            110
+          ],
+          "original_sha256": "16d921e04921d0480042458b74f9cd7048089db2d3f04d3501993ee44a7ab0fc",
+          "sha256": "16d921e04921d0480042458b74f9cd7048089db2d3f04d3501993ee44a7ab0fc"
+        }
+      ]
+    },
+    {
+      "path": "docs/specs/history/legacy-framework-guide.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S009"
+      ],
+      "source_path": "Usr/DEVICE_DRIVER_FRAMEWORK.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Framework, bus, port and migration sections only. Device protocol and facade sections excluded; old usage examples are not current APIs.",
+      "fragments": [
+        {
+          "id": "S009-F1",
+          "lines": [
+            1,
+            63
+          ],
+          "original_sha256": "993de06ccd12db983a844fe885a2cdd687d45741890edcff84b425211071a731",
+          "sha256": "993de06ccd12db983a844fe885a2cdd687d45741890edcff84b425211071a731"
+        },
+        {
+          "id": "S009-F2",
+          "lines": [
+            78,
+            150
+          ],
+          "original_sha256": "8342fbb2b8ba8666e54193140d8c091de1d6f3293c766914fbca1e294b3b964f",
+          "sha256": "8342fbb2b8ba8666e54193140d8c091de1d6f3293c766914fbca1e294b3b964f"
+        },
+        {
+          "id": "S009-F3",
+          "lines": [
+            199,
+            212
+          ],
+          "original_sha256": "e6ec7a2e123681738da19911e0d6710d3167b9eb139f4e38dbf67f119d6667e2",
+          "sha256": "e6ec7a2e123681738da19911e0d6710d3167b9eb139f4e38dbf67f119d6667e2"
+        }
+      ]
+    },
+    {
+      "path": "docs/specs/bus-guideline-draft.md",
+      "kind": "excerpt",
+      "status": "unverified",
+      "source_ids": [
+        "S010"
+      ],
+      "source_path": "docs/specs/2026-09-29-cross-project-device-driver-guideline.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Draft only. Preserves XLY-001..006 and DRV-001..015 rule IDs as bus-applicable guidance; excludes device-protocol sections and old host mappings.",
+      "fragments": [
+        {
+          "id": "S010-F1",
+          "lines": [
+            63,
+            77
+          ],
+          "original_sha256": "2b7cbb36e2912f9802ae119d4085a3c237bd6aae92c5dfc58db8adada93b42c5",
+          "sha256": "2b7cbb36e2912f9802ae119d4085a3c237bd6aae92c5dfc58db8adada93b42c5"
+        },
+        {
+          "id": "S010-F2",
+          "lines": [
+            94,
+            207
+          ],
+          "original_sha256": "dcb8e0b076c5e7131b393cbbfe82653c21364a6f647c90f1f3bb5130675fb614",
+          "sha256": "dcb8e0b076c5e7131b393cbbfe82653c21364a6f647c90f1f3bb5130675fb614"
+        }
+      ]
+    },
+    {
+      "path": "docs/specs/port-bsp-guideline-draft.md",
+      "kind": "excerpt",
+      "status": "unverified",
+      "source_ids": [
+        "S011"
+      ],
+      "source_path": "docs/specs/2026-09-29-cross-project-port-bsp-guideline.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Draft only. Preserves XLY-007..011 and PORT-001..017; excludes KG200Z mapping and broken source paths.",
+      "fragments": [
+        {
+          "id": "S011-F1",
+          "lines": [
+            13,
+            23
+          ],
+          "original_sha256": "69a03af48757b3d53768f61b1677568b2eceb882a509284f5af7c67653df8db2",
+          "sha256": "69a03af48757b3d53768f61b1677568b2eceb882a509284f5af7c67653df8db2"
+        },
+        {
+          "id": "S011-F2",
+          "lines": [
+            67,
+            198
+          ],
+          "original_sha256": "752544572198172ca03c3ce8b8a67d1b42c209461e11d9e1a12c0486ac3178f7",
+          "sha256": "752544572198172ca03c3ce8b8a67d1b42c209461e11d9e1a12c0486ac3178f7"
+        }
+      ]
+    },
+    {
+      "path": "docs/completions/history/2026-09-30-semantic-timer-pwm.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S012"
+      ],
+      "source_path": "docs/completions/2026-09-30-semantic-timer-pwm-resource-architecture.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Historical software evidence only; capture and arbitration no longer describe current code. No new hardware verification inferred.",
+      "fragments": [
+        {
+          "id": "S012-F1",
+          "lines": [
+            3,
+            10
+          ],
+          "original_sha256": "0dde201e0309813f5b60f193bf635cd44dfcf5dec98c1755835b915988496d75",
+          "sha256": "0dde201e0309813f5b60f193bf635cd44dfcf5dec98c1755835b915988496d75"
+        },
+        {
+          "id": "S012-F2",
+          "lines": [
+            34,
+            133
+          ],
+          "original_sha256": "daafd10f1a066d414833008755d66f27c233d33885ffb67d9a3844559ed66af3",
+          "sha256": "daafd10f1a066d414833008755d66f27c233d33885ffb67d9a3844559ed66af3"
+        }
+      ]
+    },
+    {
+      "path": "docs/completions/history/2026-10-09-compact-timer-pwm.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S013"
+      ],
+      "source_path": "docs/completions/2026-10-09-compact-timer-pwm-port.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Earlier software checks. Separate TIM/PWM adapters and later API changes are not covered by these results.",
+      "fragments": [
+        {
+          "id": "S013-F1",
+          "lines": [
+            1,
+            66
+          ],
+          "original_sha256": "d3e20d7187bda5f68d156890e08da3f8a819d1142e7fe2fdbcceffa69c2eb6bd",
+          "sha256": "d3e20d7187bda5f68d156890e08da3f8a819d1142e7fe2fdbcceffa69c2eb6bd"
+        }
+      ]
+    },
+    {
+      "path": "docs/completions/history/2026-10-09-multichannel-pwm.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S014"
+      ],
+      "source_path": "docs/completions/2026-10-09-multichannel-pwm.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Old document used channels 1..4; current enums are 0..3. No physical PWM waveform verification was recorded.",
+      "fragments": [
+        {
+          "id": "S014-F1",
+          "lines": [
+            1,
+            45
+          ],
+          "original_sha256": "065a61a50e69570e895415ae53257a6543772c243a59d0ed4d8fac743aee958b",
+          "sha256": "065a61a50e69570e895415ae53257a6543772c243a59d0ed4d8fac743aee958b"
+        }
+      ]
+    },
+    {
+      "path": "docs/completions/history/2026-09-29-guideline-origin.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S015"
+      ],
+      "source_path": "docs/completions/2026-09-29-cross-project-guidelines.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Review considerations and draft authority only. Does not import facade rules or claim framework compliance.",
+      "fragments": [
+        {
+          "id": "S015-F1",
+          "lines": [
+            40,
+            50
+          ],
+          "original_sha256": "9efe34ce27768e1b5b697fb2e3ddea2d78b41693f5667d7129a59cf479f0d33a",
+          "sha256": "9efe34ce27768e1b5b697fb2e3ddea2d78b41693f5667d7129a59cf479f0d33a"
+        },
+        {
+          "id": "S015-F2",
+          "lines": [
+            98,
+            107
+          ],
+          "original_sha256": "1b64645591f9ca90572494777697cba637875ec161566fa9f38f0ce9899e88bb",
+          "sha256": "1b64645591f9ca90572494777697cba637875ec161566fa9f38f0ce9899e88bb"
+        }
+      ]
+    },
+    {
+      "path": "docs/completions/history/2026-09-29-document-governance.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S016"
+      ],
+      "source_path": "docs/completions/2026-09-29-documentation-taxonomy-and-index.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Document taxonomy and historical evidence boundary; excluded old host check counts.",
+      "fragments": [
+        {
+          "id": "S016-F1",
+          "lines": [
+            3,
+            16
+          ],
+          "original_sha256": "0be95638fa831b9aff8a005e3f6b7e3fed76b6143f0b676ce52a8bfbea0b066a",
+          "sha256": "0be95638fa831b9aff8a005e3f6b7e3fed76b6143f0b676ce52a8bfbea0b066a"
+        },
+        {
+          "id": "S016-F2",
+          "lines": [
+            74,
+            83
+          ],
+          "original_sha256": "123d1f505465e2ba9cf6f4a37fd45ea0fb9218ad9f58d208dac7030ecd4c8306",
+          "sha256": "123d1f505465e2ba9cf6f4a37fd45ea0fb9218ad9f58d208dac7030ecd4c8306"
+        }
+      ]
+    },
+    {
+      "path": "docs/logs/history/kg200z-framework-changelog.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S017"
+      ],
+      "source_path": "docs/logs/CHANGELOG.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Selected framework change entries. Some host-specific context remains necessary to understand ownership evolution; application persistence and chip-driver entries excluded.",
+      "fragments": [
+        {
+          "id": "S017-F1",
+          "lines": [
+            10,
+            138
+          ],
+          "original_sha256": "0ed8c018d95240a393e113e317a5c55ec7ba453d574a4d255cd2fa02fe5eabb0",
+          "sha256": "0ed8c018d95240a393e113e317a5c55ec7ba453d574a4d255cd2fa02fe5eabb0"
+        },
+        {
+          "id": "S017-F2",
+          "lines": [
+            141,
+            145
+          ],
+          "original_sha256": "c40092a83f51896d36e6065200b2bfbc25a980ed5e8d489aa76f7b40d425d1c1",
+          "sha256": "c40092a83f51896d36e6065200b2bfbc25a980ed5e8d489aa76f7b40d425d1c1"
+        },
+        {
+          "id": "S017-F3",
+          "lines": [
+            149,
+            373
+          ],
+          "original_sha256": "f505af5b17895b516cbc31e40b83924ad453ebc24f49c512485735af540bbe46",
+          "sha256": "f680008709c88364f1509b1ed37fbfd920a54cf855b1d5decf465853b1be03ae"
+        },
+        {
+          "id": "S017-F4",
+          "lines": [
+            521,
+            666
+          ],
+          "original_sha256": "447a2d3c03ca4fa5b393cd1c9fb3e0a7224db8d2d6a28d6e53c067902276c7ea",
+          "sha256": "8a6f82a501be1338f8324aadbda17073f7eab89df0edbaf2969ab5f2f04f6798"
+        },
+        {
+          "id": "S017-F5",
+          "lines": [
+            667,
+            759
+          ],
+          "original_sha256": "cd13ace2abb56424a30150313c6d4f1c4cd0dcc3366b1f27d691f825a79961e8",
+          "sha256": "cd13ace2abb56424a30150313c6d4f1c4cd0dcc3366b1f27d691f825a79961e8"
+        },
+        {
+          "id": "S017-F6",
+          "lines": [
+            760,
+            885
+          ],
+          "original_sha256": "e4074cc497b3be93305668ba4beb9cf13f2f33104a1cbb9b8b6024d169647b0c",
+          "sha256": "aea5d3d94b50e95aff170f90a7f8e5cd47455fb8cc0d840b305e6e3d83179861"
+        },
+        {
+          "id": "S017-F7",
+          "lines": [
+            951,
+            997
+          ],
+          "original_sha256": "a58a16b2f6bb2d7ef3d084a072ae17400bb827bd9915138ffceaa8f8d111e5a1",
+          "sha256": "a58a16b2f6bb2d7ef3d084a072ae17400bb827bd9915138ffceaa8f8d111e5a1"
+        }
+      ]
+    },
+    {
+      "path": "docs/logs/history/kg200z-framework-ai-log.md",
+      "kind": "excerpt",
+      "status": "historical",
+      "source_ids": [
+        "S018"
+      ],
+      "source_path": "docs/logs/ai-generation-log.md",
+      "applicable_version": "historical; verified runtime commit undetermined",
+      "transformation": "Select line ranges; normalize LF; redact serial port and local tool paths. No semantic rewrites.",
+      "note": "Selected framework work and failures. Mixed/duplicated historical entries retained without inventing their missing attribution; device status and CLI runtime entries excluded.",
+      "fragments": [
+        {
+          "id": "S018-F1",
+          "lines": [
+            3,
+            105
+          ],
+          "original_sha256": "391275563ea980a672ce5dc6cc4c9ee6baf76aecffda8b83411f3bfe400f9738",
+          "sha256": "391275563ea980a672ce5dc6cc4c9ee6baf76aecffda8b83411f3bfe400f9738"
+        },
+        {
+          "id": "S018-F2",
+          "lines": [
+            118,
+            185
+          ],
+          "original_sha256": "24483c1df829193e37cc72ff8ab37d1e8eb975b19418a818d3ff02203071f2c8",
+          "sha256": "16e0b888b67c244c56df2efae27ec51299209a52f8733a2bd3b11b3d9d1c0a8a"
+        },
+        {
+          "id": "S018-F3",
+          "lines": [
+            186,
+            231
+          ],
+          "original_sha256": "6007cac616bb78e5c4e5bae85db6c915e077b80889dd8ffb8e14dd27f9deb52f",
+          "sha256": "6007cac616bb78e5c4e5bae85db6c915e077b80889dd8ffb8e14dd27f9deb52f"
+        },
+        {
+          "id": "S018-F4",
+          "lines": [
+            275,
+            392
+          ],
+          "original_sha256": "27099e818a17a25f4edb5957e1e5db21f9e925b09f70a1d7db75b769e8bc6004",
+          "sha256": "27099e818a17a25f4edb5957e1e5db21f9e925b09f70a1d7db75b769e8bc6004"
+        }
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S019",
+        "S022"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "README.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S028",
+        "S023"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "rules/coding.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S019",
+        "S020"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "rules/documentation.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S019",
+        "S022"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "scripts/docs-library.py",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S025",
+        "S022"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "scripts/docs-index.ps1",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S025"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "scripts/import-kg200z-history.py",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S022",
+        "S023"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "scripts/kg200z-import.json",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S027",
+        "S023"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "tests/docs_library_test.py",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S022",
+        "S025"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/README.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S023",
+        "S022"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/specs/current-architecture.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S028",
+        "S045",
+        "S044",
+        "S040",
+        "S042",
+        "S038",
+        "S035",
+        "S062",
+        "S063",
+        "S058",
+        "S059",
+        "S029",
+        "S030",
+        "S047",
+        "S048",
+        "S049"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/specs/host-integration.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S066",
+        "S067",
+        "S030",
+        "S031",
+        "S065",
+        "S064",
+        "S061",
+        "S057",
+        "S055",
+        "S053",
+        "S059",
+        "S062",
+        "S047",
+        "S049"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/specs/draft-gap-review.md",
+      "kind": "derived",
+      "status": "unverified",
+      "source_ids": [
+        "S010",
+        "S011",
+        "S045",
+        "S062",
+        "S059",
+        "S046",
+        "S047"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/specs/legacy-path-map.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S009",
+        "S028"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/plans/2026-10-10-portable-document-library.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S019",
+        "S023",
+        "S028"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/logs/CHANGELOG.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S028",
+        "S017"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/logs/ai-generation-log.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S022",
+        "S018"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/completions/TEMPLATE.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S024"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/completions/evidence-index.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S012",
+        "S013",
+        "S014",
+        "S017"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/completions/2026-10-10-portable-document-library.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S019",
+        "S022",
+        "S028"
+      ],
+      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+    },
+    {
+      "path": "docs/specs/api-inventory.md",
+      "kind": "api-snapshot",
+      "status": "active",
+      "source_ids": [
+        "S045",
+        "S034",
+        "S036",
+        "S040",
+        "S044",
+        "S042",
+        "S038",
+        "S048"
+      ],
+      "transformation": "Public headers quoted from the pinned framework commit; LF normalized."
+    },
+    {
+      "path": "docs/logs/history/framework-git-history.md",
+      "kind": "git-history",
+      "status": "historical",
+      "source_ids": [
+        "S028"
+      ],
+      "command": "git log --reverse --format='%H %ad %s' --date=short d29419be990aa562bcbacabb17ac9c78b31a0908",
+      "transformation": "Local Git commit metadata, not inferred completion evidence."
+    }
+  ],
+  "excluded": [
+    {
+      "path": "docs/plans/2026-08-25-fm25v10-fram-driver.md",
+      "reason": "Chip protocol outside dev_fram submodule."
+    },
+    {
+      "path": "docs/plans/2026-09-21-system-parameters-fram-cli.md",
+      "reason": "Application storage, parameters and CLI outside submodule."
+    },
+    {
+      "path": "docs/specs/2026-09-29-cross-project-device-facade-guideline.md",
+      "reason": "Facade outside submodule scope."
+    },
+    {
+      "path": "docs/plans/build-flash-loop-workflow.md",
+      "reason": "Host-specific commands; portable library documents evidence boundaries instead."
+    },
+    {
+      "path": "Usr/drivers/dev; Usr/device; Usr/app",
+      "reason": "Device protocols, facades and application code outside submodule."
+    },
+    {
+      "path": ".codex/config.toml; .mcp.json; .trae; .superpowers/sdd",
+      "reason": "Machine/client configuration or unverified local process cache."
+    },
+    {
+      "path": "scripts/* firmware test/build/flash scripts; tests/ring_buf_host_test.c",
+      "reason": "Only documentation tools and evidence pointers were requested."
+    },
+    {
+      "path": "docs/logs application/device runtime entries",
+      "reason": "Host-specific device/CLI observations excluded; framework-related ownership records retained as historical excerpts."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "date": "2026-10-10",
+    "framework_commit": "d29419be990aa562bcbacabb17ac9c78b31a0908",
+    "host_commit": "8ab7a95033b30b5848def22971a35bacab766645"
+  },
+  "repositories": {
+    "framework": "https://github.com/sunlight-IT/dev_fram",
+    "host": "https://github.com/sunlight-IT/KG200Z_LORAWAN"
+  },
+  "imports": [
+    {"source": "docs/plans/2026-08-17-mx-peripheral-configuration-ownership.md", "target": "docs/plans/history/2026-08-17-mx-ownership.md", "title": "Historical MX ownership proposal", "ranges": [[1,40],[123,188],[218,323],[363,446],[462,490]], "note": "Superseded ownership proposal. Selected UART/SPI/I2C/GPIO contracts; omitted application and chip-driver changes."},
+    {"source": "docs/plans/2026-09-03-rtthread-style-port-resource-decoupling.md", "target": "docs/plans/history/2026-09-03-resource-decoupling.md", "title": "Historical resource decoupling proposal", "ranges": [[1,136],[179,294],[440,459]], "note": "Architecture, private descriptors and reusable wrappers only. RT-Thread was a reference model, not an RTOS dependency."},
+    {"source": "docs/plans/2026-09-10-uart-clock-dma-resource-decoupling.md", "target": "docs/plans/history/2026-09-10-uart-clock-dma.md", "title": "Historical UART clock and DMA proposal", "ranges": [[1,111],[219,592],[879,892]], "note": "Historical UART/MSP/DMA contracts. Physical mappings and retained Core ownership apply only to the old host version."},
+    {"source": "docs/plans/2026-09-12-usr-check-macro-pilot.md", "target": "docs/plans/history/2026-09-12-guard-macros.md", "title": "Historical guard macro pilot", "ranges": [[1,68]], "note": "Complete framework-only pilot plan, preserved as a proposal rather than completion evidence."},
+    {"source": "docs/plans/2026-09-17-gpio-i2c-dma-resource-decoupling.md", "target": "docs/plans/history/2026-09-17-gpio-i2c-dma.md", "title": "Historical GPIO, I2C and DMA proposal", "ranges": [[1,79]], "note": "Resource-consumer ownership plan. Host pins, build and reviewer instructions remain historical."},
+    {"source": "docs/plans/2026-09-30-semantic-timer-pwm-resource-architecture.md", "target": "docs/plans/history/2026-09-30-semantic-timer-pwm.md", "title": "Historical semantic timer and PWM proposal", "ranges": [[1,85]], "note": "Capture, claims and calculators were subsequently removed. Excludes the application-integration task."},
+    {"source": "docs/specs/2026-08-14-usr-port-reuse-design.md", "target": "docs/specs/history/2026-08-14-port-reuse.md", "title": "Historical reusable port design", "ranges": [[1,64],[79,92]], "note": "Bus/port boundaries and error mapping. MX-only configuration ownership is historical."},
+    {"source": "docs/specs/2026-09-17-gpio-i2c-dma-resource-decoupling-design.md", "target": "docs/specs/history/2026-09-17-resource-design.md", "title": "Historical GPIO, I2C and DMA design", "ranges": [[1,69],[88,110]], "note": "Hardware mapping is old KG200Z context; it is not a portable board definition."},
+    {"source": "Usr/DEVICE_DRIVER_FRAMEWORK.md", "target": "docs/specs/history/legacy-framework-guide.md", "title": "Historical framework guide excerpts", "ranges": [[1,63],[78,150],[199,212]], "note": "Framework, bus, port and migration sections only. Device protocol and facade sections excluded; old usage examples are not current APIs."},
+    {"source": "docs/specs/2026-09-29-cross-project-device-driver-guideline.md", "target": "docs/specs/bus-guideline-draft.md", "title": "Reusable bus guideline - review draft", "ranges": [[63,77],[94,207]], "note": "Draft only. Preserves XLY-001..006 and DRV-001..015 rule IDs as bus-applicable guidance; excludes device-protocol sections and old host mappings."},
+    {"source": "docs/specs/2026-09-29-cross-project-port-bsp-guideline.md", "target": "docs/specs/port-bsp-guideline-draft.md", "title": "Port and BSP guideline - review draft", "ranges": [[13,23],[67,198]], "note": "Draft only. Preserves XLY-007..011 and PORT-001..017; excludes KG200Z mapping and broken source paths."},
+    {"source": "docs/completions/2026-09-30-semantic-timer-pwm-resource-architecture.md", "target": "docs/completions/history/2026-09-30-semantic-timer-pwm.md", "title": "Historical semantic TIM/PWM evidence", "ranges": [[3,10],[34,133]], "note": "Historical software evidence only; capture and arbitration no longer describe current code. No new hardware verification inferred."},
+    {"source": "docs/completions/2026-10-09-compact-timer-pwm-port.md", "target": "docs/completions/history/2026-10-09-compact-timer-pwm.md", "title": "Historical compact TIM/PWM evidence", "ranges": [[1,66]], "note": "Earlier software checks. Separate TIM/PWM adapters and later API changes are not covered by these results."},
+    {"source": "docs/completions/2026-10-09-multichannel-pwm.md", "target": "docs/completions/history/2026-10-09-multichannel-pwm.md", "title": "Historical multichannel PWM evidence", "ranges": [[1,45]], "note": "Old document used channels 1..4; current enums are 0..3. No physical PWM waveform verification was recorded."},
+    {"source": "docs/completions/2026-09-29-cross-project-guidelines.md", "target": "docs/completions/history/2026-09-29-guideline-origin.md", "title": "Guideline provenance excerpts", "ranges": [[40,50],[98,107]], "note": "Review considerations and draft authority only. Does not import facade rules or claim framework compliance."},
+    {"source": "docs/completions/2026-09-29-documentation-taxonomy-and-index.md", "target": "docs/completions/history/2026-09-29-document-governance.md", "title": "Documentation governance provenance", "ranges": [[3,16],[74,83]], "note": "Document taxonomy and historical evidence boundary; excluded old host check counts."},
+    {"source": "docs/logs/CHANGELOG.md", "target": "docs/logs/history/kg200z-framework-changelog.md", "title": "Imported framework change records", "ranges": [[10,138],[141,145],[149,373],[521,666],[667,759],[760,885],[951,997]], "note": "Selected framework change entries. Some host-specific context remains necessary to understand ownership evolution; application persistence and chip-driver entries excluded."},
+    {"source": "docs/logs/ai-generation-log.md", "target": "docs/logs/history/kg200z-framework-ai-log.md", "title": "Imported framework AI provenance", "ranges": [[3,105],[118,185],[186,231],[275,392]], "note": "Selected framework work and failures. Mixed/duplicated historical entries retained without inventing their missing attribution; device status and CLI runtime entries excluded."}
+  ],
+  "additional_host_sources": ["AGENTS.md", ".codex/rules/firmware.md", ".codex/rules/git.md", ".codex/rules/documentation.md", "docs/README.md", "docs/completions/TEMPLATE.md", "scripts/docs-index.ps1", "scripts/docs-guideline-check.ps1", "scripts/docs-metadata.json"],
+  "derived": [
+    {"path": "AGENTS.md", "sources": ["host:AGENTS.md", "host:.codex/rules/documentation.md"]},
+    {"path": "README.md", "sources": ["framework:README.md", "host:docs/README.md"]},
+    {"path": "rules/coding.md", "sources": ["host:AGENTS.md", "host:.codex/rules/firmware.md"]},
+    {"path": "rules/documentation.md", "sources": ["host:AGENTS.md", "host:.codex/rules/documentation.md"]},
+    {"path": "scripts/docs-library.py", "sources": ["host:scripts/docs-index.ps1", "host:.codex/rules/documentation.md"]},
+    {"path": "scripts/docs-index.ps1", "sources": ["host:scripts/docs-index.ps1"]},
+    {"path": "scripts/import-kg200z-history.py", "sources": ["host:.codex/rules/documentation.md", "host:docs/README.md"]},
+    {"path": "scripts/kg200z-import.json", "sources": ["host:scripts/docs-metadata.json", "host:docs/README.md"]},
+    {"path": "tests/docs_library_test.py", "sources": ["host:.codex/rules/documentation.md", "host:scripts/docs-index.ps1"]},
+    {"path": "docs/README.md", "sources": ["host:docs/README.md", "host:.codex/rules/documentation.md"]},
+    {"path": "docs/specs/current-architecture.md", "sources": ["framework:README.md", "framework:bus/dev/dri_ops.h", "framework:bus/dev/dev_uart.h", "framework:bus/dev/dev_spi.h", "framework:bus/dev/dev_timer.h", "framework:bus/dev/dev_pwm.h", "framework:bus/dev/dev_i2c.c", "framework:port_bsp/port_hal_tim.c", "framework:port_bsp/port_hal_tim.h", "framework:port_bsp/port_hal_pwm.c", "framework:port_bsp/port_hal_pwm.h", "framework:board_support/demo/board_support.c", "framework:board_support/demo/board_support.h", "framework:component/ring_buf.c", "framework:component/ring_buf.h", "framework:log/my_log.h"]},
+    {"path": "docs/specs/host-integration.md", "sources": ["framework:usr_port.h", "framework:usr_port_hal.h", "framework:board_support/demo/board_support.h", "framework:board_support/demo/usr_common.h", "framework:port_bsp/port_hal_uart.h", "framework:port_bsp/port_hal_uart.c", "framework:port_bsp/port_hal_spi.h", "framework:port_bsp/port_hal_i2c.h", "framework:port_bsp/port_hal_gpio.h", "framework:port_bsp/port_hal_dma.h", "framework:port_bsp/port_hal_pwm.h", "framework:port_bsp/port_hal_tim.c", "framework:component/ring_buf.c", "framework:log/my_log.h"]},
+    {"path": "docs/specs/draft-gap-review.md", "sources": ["host:docs/specs/2026-09-29-cross-project-device-driver-guideline.md", "host:docs/specs/2026-09-29-cross-project-port-bsp-guideline.md", "framework:bus/dev/dri_ops.h", "framework:port_bsp/port_hal_tim.c", "framework:port_bsp/port_hal_pwm.h", "framework:common/usr_check.h", "framework:component/ring_buf.c"]},
+    {"path": "docs/specs/legacy-path-map.md", "sources": ["host:Usr/DEVICE_DRIVER_FRAMEWORK.md", "framework:README.md"]},
+    {"path": "docs/plans/2026-10-10-portable-document-library.md", "sources": ["host:AGENTS.md", "host:docs/README.md", "framework:README.md"]},
+    {"path": "docs/logs/CHANGELOG.md", "sources": ["framework:README.md", "host:docs/logs/CHANGELOG.md"]},
+    {"path": "docs/logs/ai-generation-log.md", "sources": ["host:.codex/rules/documentation.md", "host:docs/logs/ai-generation-log.md"]},
+    {"path": "docs/completions/TEMPLATE.md", "sources": ["host:docs/completions/TEMPLATE.md"]},
+    {"path": "docs/completions/evidence-index.md", "sources": ["host:docs/completions/2026-09-30-semantic-timer-pwm-resource-architecture.md", "host:docs/completions/2026-10-09-compact-timer-pwm-port.md", "host:docs/completions/2026-10-09-multichannel-pwm.md", "host:docs/logs/CHANGELOG.md"]},
+    {"path": "docs/completions/2026-10-10-portable-document-library.md", "sources": ["host:AGENTS.md", "host:.codex/rules/documentation.md", "framework:README.md"]}
+  ],
+  "excluded": [
+    {"path": "docs/plans/2026-08-25-fm25v10-fram-driver.md", "reason": "Chip protocol outside dev_fram submodule."},
+    {"path": "docs/plans/2026-09-21-system-parameters-fram-cli.md", "reason": "Application storage, parameters and CLI outside submodule."},
+    {"path": "docs/specs/2026-09-29-cross-project-device-facade-guideline.md", "reason": "Facade outside submodule scope."},
+    {"path": "docs/plans/build-flash-loop-workflow.md", "reason": "Host-specific commands; portable library documents evidence boundaries instead."},
+    {"path": "Usr/drivers/dev; Usr/device; Usr/app", "reason": "Device protocols, facades and application code outside submodule."},
+    {"path": ".codex/config.toml; .mcp.json; .trae; .superpowers/sdd", "reason": "Machine/client configuration or unverified local process cache."},
+    {"path": "scripts/* firmware test/build/flash scripts; tests/ring_buf_host_test.c", "reason": "Only documentation tools and evidence pointers were requested."},
+    {"path": "docs/logs application/device runtime entries", "reason": "Host-specific device/CLI observations excluded; framework-related ownership records retained as historical excerpts."}
+  ]
+}

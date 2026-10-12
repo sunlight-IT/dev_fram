@@ -1,0 +1,4 @@
+# Generated documentation exports and Python cache
+exports/
+__pycache__/
+*.pyc
