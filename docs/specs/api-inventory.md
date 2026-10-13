@@ -2,6 +2,10 @@
 
 Framework baseline: `d29419be990aa562bcbacabb17ac9c78b31a0908`.
 
+The original excerpts below remain pinned to that baseline. The final SPI DMA
+section is a separately labeled fresh working-tree observation from 2026-10-12;
+it supersedes the old SPI index count and ops/resource shape for that checkout.
+
 These are public-header excerpts, not a firmware/source distribution.
 They document the actual declarations including limits and legacy naming.
 They do not establish behavior not specified by the implementation.
@@ -492,3 +496,80 @@ uint32_t ring_buf_get_overflow(ring_buf_t *ring);
 
 #endif /* RING_BUF_H */
 ```
+
+## SPI Bare-Metal Transfer Modes - Fresh Working-Tree Addendum (2026-10-13)
+
+This section supersedes the 2026-10-12 RTOS synchronization addendum for the current
+dirty checkout. S039/S040/S045/S052/S053/S060/S061 remain baseline references, not
+hashes for these uncommitted declarations. Selected current declarations follow.
+
+```c
+typedef enum
+{
+  DEV_SPI_TRANSFER_POLLING = 0,
+  DEV_SPI_TRANSFER_INTERRUPT,
+  DEV_SPI_TRANSFER_DMA,
+} spi_transfer_mode_t;
+
+typedef struct spi_device_config
+{
+  uint32_t max_speed_hz;
+  spi_mode_t mode;
+  spi_bit_order_t bit_order;
+  spi_data_width_t data_width;
+  spi_transfer_mode_t tx_mode;
+  spi_transfer_mode_t rx_mode;
+} spi_device_config_t;
+
+typedef enum
+{
+  SPI_INDEX_0 = 0,
+  SPI_INDEX_1 = 1,
+  SPI_INDEX_2 = 2,
+  SPI_INDEX_MAX = 3,
+} spi_index_t;
+
+typedef struct
+{
+  GPIO_TypeDef *port;
+  uint16_t pin;
+  uint32_t alternate;
+  usr_port_hal_spi_clock_gate_fn_t clock_enable;
+} usr_port_hal_spi_pin_t;
+
+typedef bool (*usr_port_hal_spi_dma_buffer_valid_fn_t)(const void *buffer,
+                                                       uint16_t length,
+                                                       bool receive);
+
+typedef enum
+{
+  USR_PORT_SPI_IDLE = 0,
+  USR_PORT_SPI_ACTIVE,
+  USR_PORT_SPI_COMPLETED,
+  USR_PORT_SPI_ERROR,
+  USR_PORT_SPI_ABORTING,
+  USR_PORT_SPI_FAULTED,
+} usr_port_hal_spi_transfer_state_t;
+
+bool usr_port_hal_spi_complete(SPI_HandleTypeDef *hspi, usr_status_t result);
+void port_hal_dma_controller_clock_enable_dma1(void);
+void port_hal_dma_controller_clock_enable_dma2(void);
+```
+
+The resource retains `pins[3]` in SCK/MISO/MOSI order and independent
+`rx_dma/tx_dma`, and replaces host sync ops with `dma_buffer_valid`. Only a
+direction configured for DMA needs a valid resource. The instance retains a
+bare-metal non-recursive claim, per-direction DMA readiness, transfer state,
+result and counters; no FreeRTOS type or synchronization callback is present.
+
+`dev_spi_init/deinit/transact/begin/frame/end` signatures remain unchanged.
+`tx_len/rx_len` are bytes; 16-bit mode requires even lengths and aligned
+buffers. Single-direction and non-equal two-stage transfers use each configured
+mode. Equal-length DMA+DMA and IT+IT use their full-duplex HAL APIs; all mixed
+combinations use blocking full duplex. Rebuild custom initializers because the
+config and resource layouts are not binary compatible.
+
+See [current architecture](current-architecture.md),
+[host integration](host-integration.md) and
+[SPI DMA evidence](../completions/2026-10-12-spi-dma.md) for implementation
+semantics, H743 cache/buffer limits and verification scope.

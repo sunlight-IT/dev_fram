@@ -4,6 +4,17 @@
 `d29419be990aa562bcbacabb17ac9c78b31a0908`；历史资料导入源为主工程
 `8ab7a95033b30b5848def22971a35bacab766645`。后续检出不同提交时，必须重新核对源码。
 
+2026-10-12 SPI DMA 增补来自 fresh 工作树观察：framework HEAD
+`9bb4b31fd57696a34b0126505ef2ff4a27cffe0a`、H743 宿主 HEAD
+`1f1b738d30b936f015eb689568ad57b97bda072d`，两者均有未提交修改。
+固定基线来源记录不证明这些修改；接口与移植影响见
+[SPI DMA 完成记录](completions/2026-10-12-spi-dma.md)。
+
+2026-10-13 在同一未提交工作树上完成 SPI adapter 裸机多模式改造：去除 SPI
+FreeRTOS 同步层，TX/RX 可分别选择 polling、interrupt 或 DMA，并支持单方向 DMA
+资源。当前实现、验证结果与硬件待验项见
+[SPI 裸机多模式完成记录](completions/2026-10-13-spi-bare-metal-modes.md)。
+
 ## 阅读入口
 
 - [AI 工作入口](../AGENTS.md)与[现行编码规则](../rules/coding.md)。
@@ -11,6 +22,12 @@
 - [宿主接入契约](specs/host-integration.md)、[历史路径映射](specs/legacy-path-map.md)。
 - [总线规范草案](specs/bus-guideline-draft.md)、[Port/BSP 规范草案](specs/port-bsp-guideline-draft.md)、[条款核查表](specs/draft-gap-review.md)。
 - [验证证据索引](completions/evidence-index.md)、[完成记录模板](completions/TEMPLATE.md)。
+- [SPI DMA 前一版工作树历史证据](completions/2026-10-12-spi-dma.md)：
+  成组可选 claim/release/is_owner、3 个 SPI index、独立信号 pin、双向 DMA、
+  opaque host sync ops、任务 owner、CS 多帧同步与 completion/error/timeout/abort；
+  该记录保留为改造前历史证据。
+- [SPI 裸机多模式当前接口与证据](completions/2026-10-13-spi-bare-metal-modes.md)：
+  TX/RX 独立模式、单方向 DMA、裸机同步等待、超时恢复与 FAULTED 隔离。
 - [来源清单](../scripts/docs-sources.json)、[导入选择清单](../scripts/kg200z-import.json)。
 
 ## 分类与权威
@@ -32,6 +49,10 @@
 来源清单保存原仓库、完整提交、原路径、Git blob、原始字节 SHA-256、摘录行范围、
 摘录哈希和转换说明；导出包另有逐文件 SHA-256。新写文档引用源码来源记录及实测命令，
 没有把聊天记忆当作实现证据。所有候选资料的纳入或排除由导入清单和来源清单记录。
+
+SPI DMA 新文档沿用 S039/S040/S045/S052/S053/S060/S061 等固定基线的来源记录，
+并明确区分本次 fresh 源码阅读和主 agent 提供的测试/构建结果。
+未提交源码没有被冒充为固定 commit 的 Git blob 或 SHA-256。
 
 本次没有打包芯片协议、facade、应用业务、真实板级支持源码、固件测试脚本、固件产物或本机 AI 配置。
 历史摘录中仍可能提到宿主或设备，这是解释原有资源边界所需的上下文，不是移植代码或设备规范。

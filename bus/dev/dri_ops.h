@@ -38,6 +38,10 @@ typedef struct
   usr_status_t (*transmit)(void *ctx, const uint8_t *tx, uint16_t tx_len,
                            uint8_t *rx, uint16_t rx_len,
                            uint32_t timeout_ms);
+  /* Optional as a complete set. Claim is non-recursive and non-blocking. */
+  usr_status_t (*claim)(void *ctx);
+  usr_status_t (*release)(void *ctx);
+  bool (*is_owner)(void *ctx);
 } dev_spi_ops_t;
 
 typedef struct

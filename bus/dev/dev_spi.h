@@ -26,9 +26,17 @@ typedef enum
 
 typedef enum
 {
+  DEV_SPI_TRANSFER_POLLING = 0,
+  DEV_SPI_TRANSFER_DMA_POLL,
+  DEV_SPI_TRANSFER_DMA,
+} spi_transfer_mode_t;
+
+typedef enum
+{
   SPI_INDEX_0 = 0,
   SPI_INDEX_1 = 1,
-  SPI_INDEX_MAX = 2,
+  SPI_INDEX_2 = 2,
+  SPI_INDEX_MAX = 3,
 } spi_index_t;
 
 typedef struct spi_device_config
@@ -37,9 +45,9 @@ typedef struct spi_device_config
   spi_mode_t mode;
   spi_bit_order_t bit_order;
   spi_data_width_t data_width;
+  spi_transfer_mode_t tx_mode;
+  spi_transfer_mode_t rx_mode;
 } spi_device_config_t;
-
-
 
 typedef struct spi_device
 {
@@ -58,20 +66,16 @@ spi_device_t *get_spi_device(uint8_t index);
 usr_status_t dev_spi_init(spi_device_t *dev, const spi_device_config_t *cfg);
 usr_status_t dev_spi_deinit(spi_device_t *dev);
 usr_status_t dev_spi_transact(spi_device_t *dev,
-                                  usr_pin_id_t cs_pin,
-                                  const uint8_t *tx, uint16_t tx_len,
-                                  uint8_t *rx, uint16_t rx_len,
-                                  uint32_t timeout_ms);
+                              usr_pin_id_t cs_pin,
+                              const uint8_t *tx, uint16_t tx_len,
+                              uint8_t *rx, uint16_t rx_len,
+                              uint32_t timeout_ms);
 /* Convenience transaction: assert CS, execute one frame, then release CS. */
 
 /* Multi-frame transaction: CS remains asserted until dev_spi_end(). */
-
 usr_status_t dev_spi_frame(spi_device_t *dev, const uint8_t *tx, uint16_t tx_len,
                            uint8_t *rx, uint16_t rx_len, uint32_t timeout_ms);
 usr_status_t dev_spi_begin(spi_device_t *dev, usr_pin_id_t cs_pin);
 usr_status_t dev_spi_end(spi_device_t *dev, usr_pin_id_t cs_pin);
-
-
-
 
 #endif

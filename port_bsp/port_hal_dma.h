@@ -34,6 +34,8 @@ void port_hal_dma_irq_disable(const port_hal_dma_resource_t *resource);
 void port_hal_dma_irq(const port_hal_dma_resource_t *resource);
 
 void port_hal_dma_controller_clock_enable(void);
+void port_hal_dma_controller_clock_enable_dma1(void);
+void port_hal_dma_controller_clock_enable_dma2(void);
 
 #ifdef __cplusplus
 }

@@ -11,7 +11,7 @@
       "path": "docs/README.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "28d2e66a8ab118adbc35c77778ffb402c14a168597049b6d9cb8dbe14e385547"
+      "sha256": "be61b149681058a6b842f10dc92d76dee0b6b67b0f5b48ca25347d75ee2d94a9"
     },
     {
       "path": "docs/completions/2026-10-10-portable-document-library.md",
@@ -26,6 +26,18 @@
       "sha256": "90eba777c6d2ca9fd3dc0a41bb480eaee5d5315238e802bf677ca2f6246ebb30"
     },
     {
+      "path": "docs/completions/2026-10-12-spi-dma.md",
+      "kind": "derived",
+      "status": "historical",
+      "sha256": "42cf5cb8142303da73288da359009f4a07a5d6c88dd31c55b5514ac7c8d22472"
+    },
+    {
+      "path": "docs/completions/2026-10-13-spi-bare-metal-modes.md",
+      "kind": "derived",
+      "status": "active",
+      "sha256": "73f5502c154e08982427e5af31c5725746ce3b344cfc94903eddb11b07400c23"
+    },
+    {
       "path": "docs/completions/TEMPLATE.md",
       "kind": "derived",
       "status": "active",
@@ -35,7 +47,7 @@
       "path": "docs/completions/evidence-index.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "e777c3c37fa8cf02d70a85e3d3b7a3825ddeaf98f0d9beab4cc1e0a67a68fab8"
+      "sha256": "95225867d3005eae041ebd799ce37c92251e09d8aeae2415b9c3ca8055c8c763"
     },
     {
       "path": "docs/completions/history/2026-09-29-document-governance.md",
@@ -71,13 +83,13 @@
       "path": "docs/logs/CHANGELOG.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "f6784eefa350f09d65097e7b63d31be5eb02dd776cdea56db7a4ed2f9bd3c8b7"
+      "sha256": "23e60b56ee99d80e5c03469898403014d5ee69ad9c575026e1870b73911768c2"
     },
     {
       "path": "docs/logs/ai-generation-log.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "d58294661d398ff2d09ffea8753b4d01262a22205df3ab8951224c2fa5330a98"
+      "sha256": "d5d2ee67ea08264a77f22214bdd7b678ef7c730f3cc0130d457a83b41b8cc32d"
     },
     {
       "path": "docs/logs/history/framework-git-history.md",
@@ -143,7 +155,7 @@
       "path": "docs/specs/api-inventory.md",
       "kind": "api-snapshot",
       "status": "active",
-      "sha256": "e48234894a9749844b51d11ba218992e40506ed5c19ee99b62e5d4ffbabecd6c"
+      "sha256": "0a2fea54165d3ff02ba8cc10622e9a204b19247b778aefffbaa45530bb2efb2c"
     },
     {
       "path": "docs/specs/bus-guideline-draft.md",
@@ -155,7 +167,7 @@
       "path": "docs/specs/current-architecture.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "8b304e3c6040e6364e503adf63a94fec165c09ed1daaf9f88de16c6d6979931e"
+      "sha256": "4e2597265ed3237aaec5933ed08fcf410b01f105c44ed643e2af01a2548e9d95"
     },
     {
       "path": "docs/specs/draft-gap-review.md",
@@ -185,7 +197,7 @@
       "path": "docs/specs/host-integration.md",
       "kind": "derived",
       "status": "active",
-      "sha256": "703da0efe843158de90fffc519efe989db7fd6f0346f83b85843dd4dd69d93aa"
+      "sha256": "f9ceaf8f730c72cd86598d35d24359c0adf6289ce1dc8c3a9905ca80155371e7"
     },
     {
       "path": "docs/specs/legacy-path-map.md",
@@ -227,7 +239,7 @@
       "path": "scripts/docs-sources.json",
       "kind": "tool-or-entry",
       "status": "active",
-      "sha256": "236b6f67821334b0c960fdbeef098c96d459f6f678dc02893eade3436f5b95a5"
+      "sha256": "d9bbe61de0f9e7d5133b9ad853b4a2d34af41ff74d7cc696f9b84fbba432c993"
     },
     {
       "path": "scripts/import-kg200z-history.py",
@@ -248,5 +260,5 @@
       "sha256": "915a45c19de183abb764ed2b4a1724f9db705584599346b1a9ebf933623d76d9"
     }
   ],
-  "agents_sha256": "bc2af71b89a8ac20a5e9097040ffe96c362474bf9f71670a6b2142a2d2748513"
+  "agents_sha256": "73188f47626676ca0614d1de843e2ccd8058d51d8b2f7a9c695cfa0e6313f72e"
 }

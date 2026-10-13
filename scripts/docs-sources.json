@@ -1360,7 +1360,7 @@
         "S023",
         "S022"
       ],
-      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+      "transformation": "Authored synthesis from pinned sources; SPI DMA navigation refers to explicitly labeled fresh dirty-worktree observations in docs/completions/2026-10-12-spi-dma.md, not new Git blobs or source hashes."
     },
     {
       "path": "docs/specs/current-architecture.md",
@@ -1371,6 +1371,11 @@
         "S045",
         "S044",
         "S040",
+        "S039",
+        "S052",
+        "S053",
+        "S060",
+        "S061",
         "S042",
         "S038",
         "S035",
@@ -1384,7 +1389,7 @@
         "S048",
         "S049"
       ],
-      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+      "transformation": "Authored synthesis from pinned sources plus separately labeled fresh SPI DMA observations of framework HEAD 9bb4b31fd57696a34b0126505ef2ff4a27cffe0a and H743 host HEAD 1f1b738d30b936f015eb689568ad57b97bda072d, both dirty. Observation and handed-off validation limits are recorded in docs/completions/2026-10-12-spi-dma.md; pinned hashes are not hashes of the working tree."
     },
     {
       "path": "docs/specs/host-integration.md",
@@ -1398,6 +1403,11 @@
         "S065",
         "S064",
         "S061",
+        "S039",
+        "S040",
+        "S045",
+        "S052",
+        "S060",
         "S057",
         "S055",
         "S053",
@@ -1406,7 +1416,7 @@
         "S047",
         "S049"
       ],
-      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+      "transformation": "Authored synthesis from pinned sources plus explicitly labeled fresh SPI DMA interface and host integration observations; current dirty framework/host revisions and validation scope are in docs/completions/2026-10-12-spi-dma.md. No dirty or untracked source is represented as a pinned blob/hash."
     },
     {
       "path": "docs/specs/draft-gap-review.md",
@@ -1452,7 +1462,7 @@
         "S028",
         "S017"
       ],
-      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+      "transformation": "Authored synthesis from cited pinned sources; appended SPI DMA documentation-only entry is a fresh working-tree observation with handed-off tests distinguished from document checks in docs/completions/2026-10-12-spi-dma.md. Earlier log entries are unchanged."
     },
     {
       "path": "docs/logs/ai-generation-log.md",
@@ -1462,7 +1472,7 @@
         "S022",
         "S018"
       ],
-      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+      "transformation": "Authored synthesis from cited pinned sources; appended SPI DMA document-side-task provenance identifies fresh source reading, dirty revisions, supplied validation and the exact restricted write scope. Earlier provenance entries are unchanged."
     },
     {
       "path": "docs/completions/TEMPLATE.md",
@@ -1483,7 +1493,7 @@
         "S014",
         "S017"
       ],
-      "transformation": "Authored synthesis from cited sources; fresh observations identified in the completion record."
+      "transformation": "Authored synthesis from cited pinned sources; added link to fresh SPI DMA working-tree observations and separately attributed main-agent test/build handoff. Existing CAN and historical evidence are not re-certified or rewritten."
     },
     {
       "path": "docs/completions/2026-10-10-portable-document-library.md",
@@ -1517,12 +1527,49 @@
         "S034",
         "S036",
         "S040",
+        "S039",
+        "S052",
+        "S053",
+        "S060",
+        "S061",
         "S044",
         "S042",
         "S038",
         "S048"
       ],
-      "transformation": "Public headers quoted from the pinned framework commit; LF normalized."
+      "transformation": "Original public-header excerpts remain quoted from the pinned framework commit with LF normalization. A separately labeled 2026-10-12 SPI DMA addendum quotes selected fresh declarations from dirty framework HEAD 9bb4b31fd57696a34b0126505ef2ff4a27cffe0a with H743 host HEAD 1f1b738d30b936f015eb689568ad57b97bda072d; pinned source hashes do not certify the addendum."
+    },
+    {
+      "path": "docs/completions/2026-10-12-spi-dma.md",
+      "kind": "derived",
+      "status": "historical",
+      "source_ids": [
+        "S039",
+        "S040",
+        "S045",
+        "S052",
+        "S053",
+        "S060",
+        "S061",
+        "S022"
+      ],
+      "transformation": "Authored from pinned SPI/DMA interface and documentation baseline references plus explicitly labeled fresh observations from dirty framework HEAD 9bb4b31fd57696a34b0126505ef2ff4a27cffe0a and H743 host HEAD 1f1b738d30b936f015eb689568ad57b97bda072d. Main-agent supplied SPI host-test/Debug results are separate from fresh document checks; no fabricated Git blob, source hash or hardware validation. Host-only evidence remains at host doc/2026-10-12-spi-dma.md."
+    },
+    {
+      "path": "docs/completions/2026-10-13-spi-bare-metal-modes.md",
+      "kind": "derived",
+      "status": "active",
+      "source_ids": [
+        "S039",
+        "S040",
+        "S045",
+        "S052",
+        "S053",
+        "S060",
+        "S061",
+        "S022"
+      ],
+      "transformation": "Authored from pinned SPI/DMA and documentation references plus explicitly labeled fresh observations of the dirty 2026-10-13 framework and H743 host working trees. Host tests and build/check commands are recorded separately from target hardware evidence; no flash or runtime result is claimed."
     },
     {
       "path": "docs/logs/history/framework-git-history.md",
